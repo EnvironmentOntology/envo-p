@@ -12,7 +12,10 @@
                                             
                                             rdfs:comment "Created at SONet Lake Semantic Workshop at NCEAS." ;
                                             
-                                            owl:imports <http://purl.obolibrary.org/obo/ro/releases/2015-04-12/ro.owl> .
+                                            owl:imports <http://purl.obolibrary.org/obo/envo_chem/chebi_imports.owl> ,
+                                                        <http://purl.obolibrary.org/obo/envo_chem/envo_imports.owl> ,
+                                                        <http://purl.obolibrary.org/obo/envo_chem/pato_imports.owl> ,
+                                                        <http://purl.obolibrary.org/obo/ro/releases/2015-04-12/ro.owl> .
 
 
 #################################################################
