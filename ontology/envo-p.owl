@@ -4,18 +4,15 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://purl.obolibrary.org/obo/envo_chem.owl> .
+@base <http://purl.obolibrary.org/obo/envo_p.owl> .
 
-<http://purl.obolibrary.org/obo/envo_chem.owl> rdf:type owl:Ontology ;
-                                               
-                                               rdfs:comment "Created at SONet Lake Semantic Workshop at NCEAS." ;
-                                               
-                                               <http://purl.org/dc/elements/1.1/creator> "Ramona L. Walls" ;
-                                               
-                                               owl:imports <http://purl.obolibrary.org/obo/envo_chem/chebi_imports.owl> ,
-                                                           <http://purl.obolibrary.org/obo/envo_chem/envo_imports.owl> ,
-                                                           <http://purl.obolibrary.org/obo/envo_chem/pato_imports.owl> ,
-                                                           <http://purl.obolibrary.org/obo/ro/releases/2015-04-12/ro.owl> .
+<http://purl.obolibrary.org/obo/envo_p.owl> rdf:type owl:Ontology ;
+                                            
+                                            <http://purl.org/dc/elements/1.1/creator> "Ramona L. Walls" ;
+                                            
+                                            rdfs:comment "Created at SONet Lake Semantic Workshop at NCEAS." ;
+                                            
+                                            owl:imports <http://purl.obolibrary.org/obo/ro/releases/2015-04-12/ro.owl> .
 
 
 #################################################################
@@ -23,6 +20,12 @@
 #    Classes
 #
 #################################################################
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_23367
+
+<http://purl.obolibrary.org/obo/CHEBI_23367> rdf:type owl:Class .
+
 
 
 ###  https://purl.obolibrary.org/obo/ENVO_CHEM_0000000
