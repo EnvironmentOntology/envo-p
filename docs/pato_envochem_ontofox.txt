@@ -1,0 +1,23 @@
+[URI of the OWL(RDF/XML) output file]
+
+
+[Source ontology]
+PATO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/PATO_0000033 #concentration of
+http://purl.obolibrary.org/obo/PATO_0002182 #molecular quality
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/PATO_0000033 #concentration of
+subClassOf http://purl.obolibrary.org/obo/PATO_0002182 #molecular quality
+http://purl.obolibrary.org/obo/PATO_0002182 #molecular quality
+subClassOf http://purl.obolibrary.org/obo/PATO_0001241
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+includeAllAxioms
+
+[Source annotation URIs to be excluded]

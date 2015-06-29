@@ -1,0 +1,173 @@
+@prefix : <http://ontofox.hegroup.org/ceex3ooz.owl#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix pato: <http://purl.obolibrary.org/obo/pato#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@base <http://purl.obolibrary.org/obo/envo_chem/pato_imports.owl> .
+
+<http://purl.obolibrary.org/obo/envo_chem/pato_imports.owl> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    Annotation properties
+#
+#################################################################
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000115
+
+obo:IAO_0000115 rdf:type owl:AnnotationProperty ;
+                
+                rdfs:label "definition"^^xsd:string .
+
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000412
+
+obo:IAO_0000412 rdf:type owl:AnnotationProperty ;
+                
+                rdfs:label "imported from"@en .
+
+
+
+###  http://purl.obolibrary.org/obo/pato#attribute_slim
+
+pato:attribute_slim rdf:type owl:AnnotationProperty .
+
+
+
+###  http://purl.obolibrary.org/obo/pato#relational_slim
+
+pato:relational_slim rdf:type owl:AnnotationProperty .
+
+
+
+###  http://purl.obolibrary.org/obo/pato#scalar_slim
+
+pato:scalar_slim rdf:type owl:AnnotationProperty .
+
+
+
+###  http://www.geneontology.org/formats/oboInOwl#created_by
+
+oboInOwl:created_by rdf:type owl:AnnotationProperty .
+
+
+
+###  http://www.geneontology.org/formats/oboInOwl#creation_date
+
+oboInOwl:creation_date rdf:type owl:AnnotationProperty .
+
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasAlternativeId
+
+oboInOwl:hasAlternativeId rdf:type owl:AnnotationProperty ;
+                          
+                          rdfs:label "has_alternative_id"^^xsd:string .
+
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+
+oboInOwl:hasExactSynonym rdf:type owl:AnnotationProperty ;
+                         
+                         rdfs:label "has_exact_synonym"^^xsd:string .
+
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasOBONamespace
+
+oboInOwl:hasOBONamespace rdf:type owl:AnnotationProperty ;
+                         
+                         rdfs:label "has_obo_namespace"^^xsd:string .
+
+
+
+###  http://www.geneontology.org/formats/oboInOwl#id
+
+oboInOwl:id rdf:type owl:AnnotationProperty .
+
+
+
+###  http://www.geneontology.org/formats/oboInOwl#inSubset
+
+oboInOwl:inSubset rdf:type owl:AnnotationProperty ;
+                  
+                  rdfs:label "in_subset"^^xsd:string .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://purl.obolibrary.org/obo/PATO_0000033
+
+obo:PATO_0000033 rdf:type owl:Class ;
+                 
+                 rdfs:label "concentration of"^^xsd:string ;
+                 
+                 rdfs:subClassOf obo:PATO_0002182 ;
+                 
+                 obo:IAO_0000115 "A quality inhering in a substance by virtue of the amount of the bearer's there is mixed with another substance."^^xsd:string ;
+                 
+                 oboInOwl:id "PATO:0000033"^^xsd:string ;
+                 
+                 oboInOwl:hasExactSynonym "concentration"^^xsd:string ;
+                 
+                 oboInOwl:hasOBONamespace "quality"^^xsd:string ;
+                 
+                 obo:IAO_0000412 obo:pato.owl ;
+                 
+                 oboInOwl:inSubset pato:attribute_slim ,
+                                   pato:relational_slim ,
+                                   pato:scalar_slim .
+
+
+
+###  http://purl.obolibrary.org/obo/PATO_0001241
+
+obo:PATO_0001241 rdf:type owl:Class .
+
+
+
+###  http://purl.obolibrary.org/obo/PATO_0002182
+
+obo:PATO_0002182 rdf:type owl:Class ;
+                 
+                 rdfs:label "molecular quality"^^xsd:string ;
+                 
+                 rdfs:subClassOf obo:PATO_0001241 ;
+                 
+                 oboInOwl:creation_date "2010-03-10T03:18:15Z"^^xsd:string ;
+                 
+                 obo:IAO_0000115 "A quality which inheres in a molecular entity, a single molecule, atom, ion, radical etc."^^xsd:string ;
+                 
+                 oboInOwl:created_by "George Gkoutos"^^xsd:string ;
+                 
+                 oboInOwl:hasAlternativeId "PATO:0002061"^^xsd:string ;
+                 
+                 oboInOwl:id "PATO:0002182"^^xsd:string ;
+                 
+                 oboInOwl:hasOBONamespace "quality"^^xsd:string ;
+                 
+                 oboInOwl:hasExactSynonym "relational molecular quality"^^xsd:string ;
+                 
+                 obo:IAO_0000412 obo:pato.owl .
+
+
+
+
+###  Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net
+

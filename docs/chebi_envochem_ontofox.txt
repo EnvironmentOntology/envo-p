@@ -1,0 +1,63 @@
+[URI of the OWL(RDF/XML) output file]
+
+
+[Source ontology]
+CHEBI
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/CHEBI_24431 #chemical entity
+http://purl.obolibrary.org/obo/CHEBI_25555 #nitrogen atom
+http://purl.obolibrary.org/obo/CHEBI_29351 #nitrogen(.)
+http://purl.obolibrary.org/obo/CHEBI_17632 #nitrate
+http://purl.obolibrary.org/obo/CHEBI_51081 #nitrates
+http://purl.obolibrary.org/obo/CHEBI_16301 #nitrite
+http://purl.obolibrary.org/obo/CHEBI_25549 #nitrites
+http://purl.obolibrary.org/obo/CHEBI_16134 #ammonia
+http://purl.obolibrary.org/obo/CHEBI_28938 #ammonium
+http://purl.obolibrary.org/obo/CHEBI_63038 #ammonium nitrate
+http://purl.obolibrary.org/obo/CHEBI_35106 #nitrogen hydride
+http://purl.obolibrary.org/obo/CHEBI_35107 #azane
+http://purl.obolibrary.org/obo/CHEBI_47704 #ammonium salt
+http://purl.obolibrary.org/obo/CHEBI_51143 #nitrogen molecular entity
+http://purl.obolibrary.org/obo/CHEBI_33267 #elemental nitrogen
+http://purl.obolibrary.org/obo/CHEBI_33250 #atom
+http://purl.obolibrary.org/obo/CHEBI_33232 #application
+http://purl.obolibrary.org/obo/CHEBI_33300 #pnictogen
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/CHEBI_24431 #chemical entity
+subClassOf http://purl.obolibrary.org/obo/BFO_0000040 #material entity
+http://purl.obolibrary.org/obo/CHEBI_25555 #nitrogen atom
+subClassOf http://purl.obolibrary.org/obo/CHEBI_33250 #atom
+http://purl.obolibrary.org/obo/CHEBI_29351 #nitrogen(.)
+subClassOf http://purl.obolibrary.org/obo/CHEBI_33267 #elemental nitrogen
+http://purl.obolibrary.org/obo/CHEBI_17632 #nitrate
+subClassOf http://purl.obolibrary.org/obo/CHEBI_23367 #molecular entity
+http://purl.obolibrary.org/obo/CHEBI_51081 #nitrates
+subClassOf http://purl.obolibrary.org/obo/CHEBI_23367 #molecular entity
+http://purl.obolibrary.org/obo/CHEBI_16301 #nitrite
+subClassOf http://purl.obolibrary.org/obo/CHEBI_23367 #molecular entity
+http://purl.obolibrary.org/obo/CHEBI_25549 #nitrites
+subClassOf http://purl.obolibrary.org/obo/CHEBI_23367 #molecular entity
+http://purl.obolibrary.org/obo/CHEBI_16134 #ammonia
+subClassOf http://purl.obolibrary.org/obo/CHEBI_35107 #azane
+http://purl.obolibrary.org/obo/CHEBI_28938 #ammonium
+subClassOf http://purl.obolibrary.org/obo/CHEBI_35106 #nitrogen hydride
+http://purl.obolibrary.org/obo/CHEBI_63038 #ammonium nitrate
+subClassOf http://purl.obolibrary.org/obo/CHEBI_47704 #ammonium salt
+http://purl.obolibrary.org/obo/CHEBI_35107 #azane
+subClassOf http://purl.obolibrary.org/obo/CHEBI_35106 #nitrogen hydride
+http://purl.obolibrary.org/obo/CHEBI_47704 #ammonium salt
+subClassOf http://purl.obolibrary.org/obo/CHEBI_51143 #nitrogen molecular entity
+http://purl.obolibrary.org/obo/CHEBI_33267 #elemental nitrogen
+subClassOf http://purl.obolibrary.org/obo/CHEBI_23367 #molecular entity
+http://purl.obolibrary.org/obo/CHEBI_33300 #pnictogen
+subClassOf http://purl.obolibrary.org/obo/CHEBI_33250 #atom
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAxiomsRecursively
+
+[Source annotation URIs to be excluded]
