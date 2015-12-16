@@ -1,0 +1,34 @@
+[Term]
+id: entity
+name: entity label
+
+[Term]
+id: location
+name: location label
+
+[Term]
+id: quality
+name: quality label
+
+[Term]
+id: attribute
+name: attribute label
+
+[Term]
+id: chemical
+is_a: pattern
+relationship: entity CHEBI:27594 ! carbon atom
+relationship: entity CHEBI:25555 ! nitrogen atom
+relationship: attribute PATO:0001536 ! solubility
+relationship: attribute PATO:0000070 ! amount
+relationship: attribute PATO:0000033 ! concentration of
+relationship: quality PATO:0001986 ! dissolved
+relationship: location ENVO:00010483 ! environmental material
+relationship: location ENVO:00001998 ! soil
+relationship: location ENVO:00002006 ! water
+
+[Term]
+id: geo
+is_a: pattern
+relationship: attribute PATO:0000146 ! temperature
+
