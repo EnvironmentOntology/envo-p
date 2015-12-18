@@ -9,6 +9,7 @@ MODS = entity_attribute_location entity_quality_location
 # DESIGN PATTERNS AND TEMPLATES
 # ----------------------------------------
 
+test: all_modules
 
 all_modules: all_modules_owl all_modules_obo 
 all_modules_owl: $(patsubst %, modules/%.owl, $(MODS))
