@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/EnvironmentOntology/envo-p.svg?branch=master)](https://travis-ci.org/EnvironmentOntology/envo-p)
+[![DOI](https://zenodo.org/badge/13996/EnvironmentOntology/envo-p.svg)](https://zenodo.org/badge/latestdoi/13996/EnvironmentOntology/envo-p)
+
 # envo-p
 
 **This is an experimental ontology with a non-stable namespace! Use at your own risk. If you would like to contribute to this ontology, please contact the developers by filing an issue.**
