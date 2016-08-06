@@ -1,0 +1,54 @@
+[URI of the OWL(RDF/XML) output file]
+
+
+[Source ontology]
+PATO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/PATO_0000033 #concentration of
+http://purl.obolibrary.org/obo/PATO_0002182 #molecular quality
+http://purl.obolibrary.org/obo/PATO_0001470 #proportionality to
+http://purl.obolibrary.org/obo/PATO_0001018 #physical quality
+http://purl.obolibrary.org/obo/PATO_0001241 #physical object quality
+http://purl.obolibrary.org/obo/PATO_0000125 #mass
+http://purl.obolibrary.org/obo/PATO_0000117 #size
+includeAllChildren
+http://purl.obolibrary.org/obo/PATO_0000051 #morphology
+http://purl.obolibrary.org/obo/PATO_0001555 #has number of
+includeAllChildren
+http://purl.obolibrary.org/obo/PATO_0001019 #mass density
+includeAllChildren
+http://purl.obolibrary.org/obo/PATO_0002198 #quality of a substance
+includeAllChildren
+
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/PATO_0000033 #concentration of
+subClassOf http://purl.obolibrary.org/obo/PATO_0002182 #molecular quality
+http://purl.obolibrary.org/obo/PATO_0002182 #molecular quality
+subClassOf http://purl.obolibrary.org/obo/PATO_0001241 #physical object quality
+http://purl.obolibrary.org/obo/PATO_0001470 #proportionality to
+subClassOf http://purl.obolibrary.org/obo/PATO_0001018 #physical quality
+http://purl.obolibrary.org/obo/PATO_0001018 #physical quality
+subClassOf http://purl.obolibrary.org/obo/PATO_0001241 #physical object quality
+http://purl.obolibrary.org/obo/PATO_0000125 #mass
+subClassOf http://purl.obolibrary.org/obo/PATO_0001018 #physical quality
+http://purl.obolibrary.org/obo/PATO_0000117 #size
+subClassOf http://purl.obolibrary.org/obo/PATO_0000051 #morphology
+http://purl.obolibrary.org/obo/PATO_0000051 #morphology
+subClassOf http://purl.obolibrary.org/obo/PATO_0001241 #physical object quality
+http://purl.obolibrary.org/obo/PATO_0001555 #has number of
+subClassOf http://purl.obolibrary.org/obo/PATO_0001241 #physical object quality
+http://purl.obolibrary.org/obo/PATO_0001019 #mass density
+subClassOf http://purl.obolibrary.org/obo/PATO_0001018 #physical quality
+http://purl.obolibrary.org/obo/PATO_0002198 #quality of a substance
+subClassOf http://purl.obolibrary.org/obo/PATO_0001018 #physical quality
+
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+includeAllAxioms
+
+[Source annotation URIs to be excluded]

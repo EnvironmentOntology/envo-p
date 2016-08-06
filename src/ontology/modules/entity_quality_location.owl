@@ -1,0 +1,82 @@
+Prefix: : <http://purl.obolibrary.org/obo/>
+Prefix: IAO: <http://purl.obolibrary.org/obo/IAO_>
+Prefix: DOSDP: <http://geneontology.org/foo/>
+Prefix: oio: <http://www.geneontology.org/formats/oboInOwl#>
+Prefix: RO: <http://purl.obolibrary.org/obo/RO_>
+Prefix: CHEBI: <http://purl.obolibrary.org/obo/CHEBI_>
+Prefix: ENVO: <http://purl.obolibrary.org/obo/ENVO_>
+Prefix: PATO: <http://purl.obolibrary.org/obo/PATO_>
+
+ ## Auto-generated
+
+Ontology: <http://purl.obolibrary.org/obo/auto>
+AnnotationProperty: IAO:0000115
+AnnotationProperty: oba/patterns/entity_quality/quality
+AnnotationProperty: oba/patterns/entity_quality/location
+AnnotationProperty: oba/patterns/entity_quality/entity
+AnnotationProperty: DOSDP:applies-pattern
+AnnotationProperty: oio:hasExactSynonym
+ObjectProperty: BFO_0000050 ## part of
+ObjectProperty: RO_0000052 ## inheres in
+ObjectProperty: RO_0002314 ## inheres in part of
+## Auto-generated classes
+
+Class: PATO:0001986 ## dissolved
+Class: ENVO:00010483 ## environmental material
+Class: CHEBI:27594 ## carbon atom
+## {"quality": "PATO:0001986", "location": "ENVO:00010483", "entity": "CHEBI:27594"}
+Class: <urn:uuid:3207d30d-175f-45be-9469-420f6145f9ff>
+ Annotations: rdfs:label "dissolved carbon atom in environmental material"
+ Annotations: IAO:0000115 "The carbon atom in a dissolved state when measured in environmental material."
+ Annotations: oio:hasExactSynonym "environmental material dissolved carbon atom"
+ EquivalentTo: PATO:0001986 and RO_0000052 some (CHEBI:27594 and BFO_0000050 some ENVO:00010483) ## dissolved and 'inheres in' some (carbon atom and 'part of' some environmental material)
+
+Class: PATO:0001986 ## dissolved
+Class: ENVO:00001998 ## soil
+Class: CHEBI:27594 ## carbon atom
+## {"quality": "PATO:0001986", "location": "ENVO:00001998", "entity": "CHEBI:27594"}
+Class: <urn:uuid:08548c09-ac19-4504-ad3e-92206e34d470>
+ Annotations: rdfs:label "dissolved carbon atom in soil"
+ Annotations: IAO:0000115 "The carbon atom in a dissolved state when measured in soil."
+ Annotations: oio:hasExactSynonym "soil dissolved carbon atom"
+ EquivalentTo: PATO:0001986 and RO_0000052 some (CHEBI:27594 and BFO_0000050 some ENVO:00001998) ## dissolved and 'inheres in' some (carbon atom and 'part of' some soil)
+
+Class: PATO:0001986 ## dissolved
+Class: ENVO:00002006 ## water
+Class: CHEBI:27594 ## carbon atom
+## {"quality": "PATO:0001986", "location": "ENVO:00002006", "entity": "CHEBI:27594"}
+Class: <urn:uuid:06f1748f-bed7-4123-b89e-8d01317a27ff>
+ Annotations: rdfs:label "dissolved carbon atom in water"
+ Annotations: IAO:0000115 "The carbon atom in a dissolved state when measured in water."
+ Annotations: oio:hasExactSynonym "water dissolved carbon atom"
+ EquivalentTo: PATO:0001986 and RO_0000052 some (CHEBI:27594 and BFO_0000050 some ENVO:00002006) ## dissolved and 'inheres in' some (carbon atom and 'part of' some water)
+
+Class: PATO:0001986 ## dissolved
+Class: ENVO:00010483 ## environmental material
+Class: CHEBI:25555 ## nitrogen atom
+## {"quality": "PATO:0001986", "location": "ENVO:00010483", "entity": "CHEBI:25555"}
+Class: <urn:uuid:45d79638-eb6a-49d6-a32c-204797fdc1cb>
+ Annotations: rdfs:label "dissolved nitrogen atom in environmental material"
+ Annotations: IAO:0000115 "The nitrogen atom in a dissolved state when measured in environmental material."
+ Annotations: oio:hasExactSynonym "environmental material dissolved nitrogen atom"
+ EquivalentTo: PATO:0001986 and RO_0000052 some (CHEBI:25555 and BFO_0000050 some ENVO:00010483) ## dissolved and 'inheres in' some (nitrogen atom and 'part of' some environmental material)
+
+Class: PATO:0001986 ## dissolved
+Class: ENVO:00001998 ## soil
+Class: CHEBI:25555 ## nitrogen atom
+## {"quality": "PATO:0001986", "location": "ENVO:00001998", "entity": "CHEBI:25555"}
+Class: <urn:uuid:f9b87dbf-7661-4d18-af4e-71e463d7935f>
+ Annotations: rdfs:label "dissolved nitrogen atom in soil"
+ Annotations: IAO:0000115 "The nitrogen atom in a dissolved state when measured in soil."
+ Annotations: oio:hasExactSynonym "soil dissolved nitrogen atom"
+ EquivalentTo: PATO:0001986 and RO_0000052 some (CHEBI:25555 and BFO_0000050 some ENVO:00001998) ## dissolved and 'inheres in' some (nitrogen atom and 'part of' some soil)
+
+Class: PATO:0001986 ## dissolved
+Class: ENVO:00002006 ## water
+Class: CHEBI:25555 ## nitrogen atom
+## {"quality": "PATO:0001986", "location": "ENVO:00002006", "entity": "CHEBI:25555"}
+Class: <urn:uuid:abd92b10-0dd6-473e-aaf7-d013a62ca252>
+ Annotations: rdfs:label "dissolved nitrogen atom in water"
+ Annotations: IAO:0000115 "The nitrogen atom in a dissolved state when measured in water."
+ Annotations: oio:hasExactSynonym "water dissolved nitrogen atom"
+ EquivalentTo: PATO:0001986 and RO_0000052 some (CHEBI:25555 and BFO_0000050 some ENVO:00002006) ## dissolved and 'inheres in' some (nitrogen atom and 'part of' some water)

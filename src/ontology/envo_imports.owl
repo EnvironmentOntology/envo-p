@@ -1,0 +1,2044 @@
+@prefix : <http://ontofox.hegroup.org/nrs3apkm.owl#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@base <http://purl.obolibrary.org/obo/envo_chem/envo_imports.owl> .
+
+<http://purl.obolibrary.org/obo/envo_chem/envo_imports.owl> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    Annotation properties
+#
+#################################################################
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000111
+
+obo:IAO_0000111 rdf:type owl:AnnotationProperty .
+
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000114
+
+obo:IAO_0000114 rdf:type owl:AnnotationProperty .
+
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000115
+
+obo:IAO_0000115 rdf:type owl:AnnotationProperty ;
+                
+                rdfs:label "definition"^^xsd:string .
+
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000116
+
+obo:IAO_0000116 rdf:type owl:AnnotationProperty .
+
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000118
+
+obo:IAO_0000118 rdf:type owl:AnnotationProperty .
+
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000412
+
+obo:IAO_0000412 rdf:type owl:AnnotationProperty ;
+                
+                rdfs:label "imported from"@en .
+
+
+
+###  http://purl.obolibrary.org/obo/RO_0001900
+
+obo:RO_0001900 rdf:type owl:AnnotationProperty .
+
+
+
+###  http://www.geneontology.org/formats/oboInOwl#created_by
+
+oboInOwl:created_by rdf:type owl:AnnotationProperty .
+
+
+
+###  http://www.geneontology.org/formats/oboInOwl#creation_date
+
+oboInOwl:creation_date rdf:type owl:AnnotationProperty .
+
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym
+
+oboInOwl:hasBroadSynonym rdf:type owl:AnnotationProperty ;
+                         
+                         rdfs:label "has_broad_synonym"^^xsd:string .
+
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasDbXref
+
+oboInOwl:hasDbXref rdf:type owl:AnnotationProperty ;
+                   
+                   rdfs:label "database_cross_reference"^^xsd:string .
+
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+
+oboInOwl:hasExactSynonym rdf:type owl:AnnotationProperty ;
+                         
+                         rdfs:label "has_exact_synonym"^^xsd:string .
+
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym
+
+oboInOwl:hasNarrowSynonym rdf:type owl:AnnotationProperty ;
+                          
+                          rdfs:label "has_narrow_synonym"^^xsd:string .
+
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasOBONamespace
+
+oboInOwl:hasOBONamespace rdf:type owl:AnnotationProperty ;
+                         
+                         rdfs:label "has_obo_namespace"^^xsd:string .
+
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym
+
+oboInOwl:hasRelatedSynonym rdf:type owl:AnnotationProperty ;
+                           
+                           rdfs:label "has_related_synonym"^^xsd:string .
+
+
+
+###  http://www.geneontology.org/formats/oboInOwl#id
+
+oboInOwl:id rdf:type owl:AnnotationProperty .
+
+
+
+###  http://www.geneontology.org/formats/oboInOwl#inSubset
+
+oboInOwl:inSubset rdf:type owl:AnnotationProperty ;
+                  
+                  rdfs:label "in_subset"^^xsd:string .
+
+
+
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000050
+
+obo:BFO_0000050 rdf:type owl:ObjectProperty ,
+                         owl:TransitiveProperty ;
+                
+                rdfs:label "part of"@en ;
+                
+                rdfs:seeAlso "http://www.obofoundry.org/ro/#OBO_REL:part_of" ;
+                
+                obo:IAO_0000116 "Ambiguous between continuant-parthood and occurrent-parthood"@en ;
+                
+                obo:IAO_0000111 "is part of"@en ;
+                
+                obo:IAO_0000118 "part_of"@en ;
+                
+                owl:inverseOf obo:BFO_0000051 ;
+                
+                obo:RO_0001900 obo:RO_0001901 ;
+                
+                obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000051
+
+obo:BFO_0000051 rdf:type owl:ObjectProperty ,
+                         owl:TransitiveProperty ;
+                
+                rdfs:label "has part"@en ;
+                
+                obo:IAO_0000116 "Ambiguous between continuant-parthood and occurrent-parthood"@en ;
+                
+                obo:IAO_0000111 "has part"@en ;
+                
+                obo:IAO_0000118 "has_part"@en ;
+                
+                obo:RO_0001900 obo:RO_0001901 ;
+                
+                obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/RO_0000086
+
+obo:RO_0000086 rdf:type owl:ObjectProperty ;
+               
+               rdfs:label "has quality"@en ;
+               
+               obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/RO_0002220
+
+obo:RO_0002220 rdf:type owl:ObjectProperty ;
+               
+               rdfs:label "adjacent to"@en ;
+               
+               obo:IAO_0000115 "x adjacent to y if and only if x and y share a boundary" ;
+               
+               obo:IAO_0000114 obo:IAO_0000125 ;
+               
+               obo:RO_0001900 obo:RO_0001901 ;
+               
+               obo:IAO_0000412 obo:envo.owl .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00000000
+
+obo:ENVO_00000000 rdf:type owl:Class ;
+                  
+                  rdfs:label "geographic feature"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00002297 ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00000000"^^xsd:string ;
+                  
+                  rdfs:comment "May appear on a map."^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "Wikipedia:Geographic_feature"^^xsd:string ;
+                  
+                  oboInOwl:hasExactSynonym "macroscopic spatial feature"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00000012
+
+obo:ENVO_00000012 rdf:type owl:Class ;
+                  
+                  rdfs:label "hydrographic feature"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00000000 ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:BFO_0000051 ;
+                                    owl:someValuesFrom obo:ENVO_00002006
+                                  ] ;
+                  
+                  obo:IAO_0000115 "A geographical feature associated with water."^^xsd:string ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00000012"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "FTT:131"^^xsd:string ,
+                                     "FTT:280"^^xsd:string ,
+                                     "FTT:711"^^xsd:string ,
+                                     "FTT:761"^^xsd:string ,
+                                     "FTT:824"^^xsd:string ,
+                                     "FTT:825"^^xsd:string ,
+                                     "FTT:826"^^xsd:string ,
+                                     "FTT:827"^^xsd:string ,
+                                     "FTT:828"^^xsd:string ,
+                                     "FTT:829"^^xsd:string ,
+                                     "Geonames:H.OVF"^^xsd:string ;
+                  
+                  oboInOwl:hasRelatedSynonym "OVERFALLS"^^xsd:string ,
+                                             "eddy"^^xsd:string ,
+                                             "fluvial feature"^^xsd:string ,
+                                             "marine feature"^^xsd:string ,
+                                             "overfalls"^^xsd:string ,
+                                             "tidal ripp"^^xsd:string ,
+                                             "upwelling"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00000015
+
+obo:ENVO_00000015 rdf:type owl:Class ;
+                  
+                  rdfs:label "ocean"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00001999 ;
+                  
+                  obo:IAO_0000115 "Continuous saline-water bodies that surround the continents and fill the Earth's great depressions."^^xsd:string ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00000015"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "EcoLexicon:ocean"^^xsd:string ,
+                                     "FTT:1019"^^xsd:string ,
+                                     "FTT:943"^^xsd:string ,
+                                     "Geonames:H.OCN"^^xsd:string ;
+                  
+                  oboInOwl:hasExactSynonym "Ocean"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "SWEETRealm:Ocean"^^xsd:string ,
+                                     "TGN:21102"^^xsd:string ,
+                                     "Wikipedia:Ocean"^^xsd:string ;
+                  
+                  oboInOwl:hasExactSynonym "ocean"^^xsd:string ;
+                  
+                  oboInOwl:hasRelatedSynonym "ocean region"^^xsd:string ,
+                                             "sea"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00000016
+
+obo:ENVO_00000016 rdf:type owl:Class ;
+                  
+                  rdfs:label "sea"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00001999 ;
+                  
+                  obo:IAO_0000115 "A large expanse of saline water usually connected with an ocean."^^xsd:string ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00000016"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "EcoLexicon:sea"^^xsd:string ,
+                                     "FTT:233"^^xsd:string ,
+                                     "FTT:830"^^xsd:string ,
+                                     "Geonames:H.SEA"^^xsd:string ;
+                  
+                  oboInOwl:hasExactSynonym "Sea"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "TGN:21103"^^xsd:string ,
+                                     "Wikipedia:Sea"^^xsd:string ;
+                  
+                  oboInOwl:hasNarrowSynonym "channel"^^xsd:string ,
+                                            "closed sea"^^xsd:string ,
+                                            "marginal sea"^^xsd:string ,
+                                            "open sea"^^xsd:string ,
+                                            "open sound"^^xsd:string ,
+                                            "open water"^^xsd:string ;
+                  
+                  oboInOwl:hasExactSynonym "sea"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00000020
+
+obo:ENVO_00000020 rdf:type owl:Class ;
+                  
+                  rdfs:label "lake"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00000063 ;
+                  
+                  obo:IAO_0000115 "A body of water or other liquid of considerable size contained on a body of land."^^xsd:string ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00000020"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "EcoLexicon:lake"^^xsd:string ,
+                                     "FTT:221"^^xsd:string ,
+                                     "FTT:704"^^xsd:string ,
+                                     "FTT:909"^^xsd:string ,
+                                     "Geonames:H.LK"^^xsd:string ,
+                                     "Geonames:H.LKS"^^xsd:string ;
+                  
+                  oboInOwl:hasExactSynonym "LAKE"^^xsd:string ,
+                                           "Lake"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "SPIRE:Lake_or_pond"^^xsd:string ,
+                                     "SWEETRealm:Lake"^^xsd:string ,
+                                     "TGN:21114"^^xsd:string ,
+                                     "TGN:21115"^^xsd:string ,
+                                     "Wikipedia:Lake"^^xsd:string ;
+                  
+                  oboInOwl:hasRelatedSynonym "broad"^^xsd:string ;
+                  
+                  oboInOwl:hasNarrowSynonym "catch basin"^^xsd:string ;
+                  
+                  oboInOwl:hasExactSynonym "lake"^^xsd:string ,
+                                           "lakes"^^xsd:string ;
+                  
+                  oboInOwl:hasRelatedSynonym "llyn"^^xsd:string ,
+                                             "loch"^^xsd:string ,
+                                             "lochan"^^xsd:string ,
+                                             "lough"^^xsd:string ,
+                                             "mere"^^xsd:string ,
+                                             "mortlake"^^xsd:string ;
+                  
+                  oboInOwl:hasNarrowSynonym "open water"^^xsd:string ;
+                  
+                  oboInOwl:hasRelatedSynonym "pasteuer lake"^^xsd:string ;
+                  
+                  oboInOwl:hasNarrowSynonym "tarn"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00000022
+
+obo:ENVO_00000022 rdf:type owl:Class ;
+                  
+                  rdfs:label "river"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00000023 ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00000022"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "EcoLexicon:river"^^xsd:string ,
+                                     "FTT:1179"^^xsd:string ,
+                                     "FTT:251"^^xsd:string ;
+                  
+                  obo:IAO_0000115 "Natural freshwater surface streams of considerable volume and a permanent or seasonal flow, moving in a definite channel toward a sea, lake, or another river; any large streams, or ones larger than brooks or creeks, such as the trunk stream and larger branches of a drainage system."^^xsd:string ;
+                  
+                  oboInOwl:hasExactSynonym "River"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "SPIRE:River"^^xsd:string ,
+                                     "SWEETRealm:River"^^xsd:string ,
+                                     "TGN:21105"^^xsd:string ,
+                                     "Wikipedia:River"^^xsd:string ;
+                  
+                  oboInOwl:hasNarrowSynonym "braided river"^^xsd:string ;
+                  
+                  oboInOwl:hasExactSynonym "rio"^^xsd:string ;
+                  
+                  oboInOwl:hasBroadSynonym "watercourse"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00000023
+
+obo:ENVO_00000023 rdf:type owl:Class ;
+                  
+                  rdfs:label "stream"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00000029 ;
+                  
+                  oboInOwl:hasRelatedSynonym "Creek"^^xsd:string ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00000023"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "EcoLexicon:stream"^^xsd:string ,
+                                     "FTT:105"^^xsd:string ,
+                                     "FTT:1221"^^xsd:string ,
+                                     "FTT:1225"^^xsd:string ,
+                                     "FTT:1261"^^xsd:string ,
+                                     "FTT:303"^^xsd:string ,
+                                     "FTT:371"^^xsd:string ,
+                                     "FTT:593"^^xsd:string ,
+                                     "FTT:721"^^xsd:string ,
+                                     "Geonames:H.STM"^^xsd:string ,
+                                     "Geonames:H.STMS"^^xsd:string ;
+                  
+                  obo:IAO_0000115 "Linear body of water flowing on the Earth's surface."^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "SWEETRealm:Stream"^^xsd:string ;
+                  
+                  oboInOwl:hasExactSynonym "Stream"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "TGN:21106"^^xsd:string ,
+                                     "TGN:21107"^^xsd:string ,
+                                     "TGN:21108"^^xsd:string ,
+                                     "TGN:21109"^^xsd:string ,
+                                     "Wikipedia:Stream"^^xsd:string ;
+                  
+                  oboInOwl:hasRelatedSynonym "beck"^^xsd:string ;
+                  
+                  oboInOwl:hasNarrowSynonym "braided stream"^^xsd:string ;
+                  
+                  oboInOwl:hasRelatedSynonym "brook"^^xsd:string ,
+                                             "burn (hydrographic)"^^xsd:string ,
+                                             "creek"^^xsd:string ;
+                  
+                  oboInOwl:hasNarrowSynonym "fork (hydrographic"^^xsd:string ,
+                                            "glacial stream"^^xsd:string ,
+                                            "lode"^^xsd:string ,
+                                            "millstream"^^xsd:string ;
+                  
+                  oboInOwl:hasRelatedSynonym "rivulet"^^xsd:string ;
+                  
+                  oboInOwl:hasExactSynonym "stream"^^xsd:string ;
+                  
+                  oboInOwl:hasNarrowSynonym "stream bend"^^xsd:string ;
+                  
+                  oboInOwl:hasExactSynonym "streams"^^xsd:string ;
+                  
+                  oboInOwl:hasBroadSynonym "watercourse"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00000029
+
+obo:ENVO_00000029 rdf:type owl:Class ;
+                  
+                  rdfs:label "watercourse"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00000063 ;
+                  
+                  obo:IAO_0000115 "A flowing body of water."^^xsd:string ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00000029"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "EcoLexicon:brook"^^xsd:string ,
+                                     "EcoLexicon:course"^^xsd:string ,
+                                     "EcoLexicon:culvert"^^xsd:string ,
+                                     "EcoLexicon:gully"^^xsd:string ,
+                                     "EcoLexicon:ravine"^^xsd:string ,
+                                     "EcoLexicon:spillway"^^xsd:string ,
+                                     "EcoLexicon:waterway"^^xsd:string ,
+                                     "FTT:105"^^xsd:string ,
+                                     "Geonames:H.NRWS"^^xsd:string ,
+                                     "Geonames:H.RCH"^^xsd:string ,
+                                     "Geonames:H.WTRC"^^xsd:string ,
+                                     "Geonames:S.SPLY"^^xsd:string ,
+                                     "TGN:21110"^^xsd:string ,
+                                     "TGN:21131"^^xsd:string ,
+                                     "TGN:21133"^^xsd:string ,
+                                     "TGN:21137"^^xsd:string ,
+                                     "TGN:21163"^^xsd:string ,
+                                     "TGN:21499"^^xsd:string ;
+                  
+                  oboInOwl:hasExactSynonym "WATERCOURSE"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "Wikipedia:Watercourse"^^xsd:string ;
+                  
+                  oboInOwl:hasRelatedSynonym "awawa"^^xsd:string ,
+                                             "barranca"^^xsd:string ,
+                                             "beck"^^xsd:string ,
+                                             "branch"^^xsd:string ,
+                                             "brook"^^xsd:string ,
+                                             "course"^^xsd:string ;
+                  
+                  oboInOwl:hasNarrowSynonym "culvert"^^xsd:string ;
+                  
+                  oboInOwl:hasRelatedSynonym "draw"^^xsd:string ;
+                  
+                  oboInOwl:hasNarrowSynonym "dredged channel"^^xsd:string ,
+                                            "fork"^^xsd:string ,
+                                            "gulch"^^xsd:string ,
+                                            "gully"^^xsd:string ,
+                                            "gut"^^xsd:string ,
+                                            "gutter"^^xsd:string ,
+                                            "kill"^^xsd:string ,
+                                            "lode"^^xsd:string ;
+                  
+                  oboInOwl:hasRelatedSynonym "moat"^^xsd:string ,
+                                             "narrows"^^xsd:string ;
+                  
+                  oboInOwl:hasNarrowSynonym "narrows"^^xsd:string ;
+                  
+                  oboInOwl:hasRelatedSynonym "narrows (hydrographic)"^^xsd:string ;
+                  
+                  oboInOwl:hasNarrowSynonym "overflow channel"^^xsd:string ,
+                                            "passage"^^xsd:string ,
+                                            "pup"^^xsd:string ,
+                                            "race"^^xsd:string ,
+                                            "ravine"^^xsd:string ,
+                                            "reach"^^xsd:string ,
+                                            "rill"^^xsd:string ,
+                                            "rio"^^xsd:string ,
+                                            "rivulet"^^xsd:string ,
+                                            "run"^^xsd:string ,
+                                            "runnel"^^xsd:string ,
+                                            "seachannel"^^xsd:string ,
+                                            "seaway"^^xsd:string ,
+                                            "spillway"^^xsd:string ,
+                                            "stream"^^xsd:string ,
+                                            "tideway"^^xsd:string ,
+                                            "wash"^^xsd:string ,
+                                            "water gap"^^xsd:string ;
+                  
+                  oboInOwl:hasExactSynonym "watercourse"^^xsd:string ;
+                  
+                  oboInOwl:hasRelatedSynonym "waterway"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00000033
+
+obo:ENVO_00000033 rdf:type owl:Class ;
+                  
+                  rdfs:label "pond"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00000020 ;
+                  
+                  obo:IAO_0000115 "A body of water, usually of smaller size than a lake."^^xsd:string ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00000033"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "EcoLexicon:pond"^^xsd:string ,
+                                     "FTT:221"^^xsd:string ,
+                                     "FTT:902"^^xsd:string ,
+                                     "FTT:904"^^xsd:string ,
+                                     "FTT:905"^^xsd:string ,
+                                     "Geonames:H.PND"^^xsd:string ,
+                                     "Geonames:H.PNDS"^^xsd:string ,
+                                     "Geonames:H.POOL"^^xsd:string ;
+                  
+                  oboInOwl:hasRelatedSynonym "POOL"^^xsd:string ;
+                  
+                  oboInOwl:hasExactSynonym "Pond"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "SPIRE:Lake_or_pond"^^xsd:string ,
+                                     "SWEETRealm:Pond"^^xsd:string ,
+                                     "TGN:21104"^^xsd:string ,
+                                     "TGN:21119"^^xsd:string ,
+                                     "Wikipedia:Pond"^^xsd:string ;
+                  
+                  oboInOwl:hasBroadSynonym "lake"^^xsd:string ;
+                  
+                  oboInOwl:hasRelatedSynonym "millpond"^^xsd:string ,
+                                             "pond"^^xsd:string ,
+                                             "ponds"^^xsd:string ,
+                                             "pool"^^xsd:string ,
+                                             "pool (water body)"^^xsd:string ;
+                  
+                  oboInOwl:hasNarrowSynonym "pool (water body)"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00000037
+
+obo:ENVO_00000037 rdf:type owl:Class ;
+                  
+                  rdfs:label "ditch"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00000121 ;
+                  
+                  obo:IAO_0000115 "A small artificial watercourse dug for draining or irrigating the land."^^xsd:string ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00000037"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "EcoLexicon:drain"^^xsd:string ,
+                                     "FTT:129"^^xsd:string ,
+                                     "FTT:400"^^xsd:string ,
+                                     "FTT:403"^^xsd:string ,
+                                     "Geomames:DTCH"^^xsd:string ,
+                                     "SWEETRealm:Drain"^^xsd:string ,
+                                     "TGN:51256"^^xsd:string ,
+                                     "Wikipedia:Ditch"^^xsd:string ;
+                  
+                  oboInOwl:hasRelatedSynonym "agricultural drain"^^xsd:string ,
+                                             "canal"^^xsd:string ;
+                  
+                  oboInOwl:hasExactSynonym "ditch"^^xsd:string ;
+                  
+                  oboInOwl:hasRelatedSynonym "drain"^^xsd:string ;
+                  
+                  oboInOwl:hasBroadSynonym "watercourse"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00000043
+
+obo:ENVO_00000043 rdf:type owl:Class ;
+                  
+                  rdfs:label "wetland"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_01001305 ;
+                  
+                  obo:IAO_0000115 "An area that is inundated or saturated by surface or ground water at a frequency and duration sufficient to support, and that under normal circumstances do support, a prevalence of vegetation typically adapted for life in saturated soil conditions."^^xsd:string ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00000043"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "EcoLexicon:wetland"^^xsd:string ;
+                  
+                  oboInOwl:hasNarrowSynonym "EstuarineWetland"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "FTT:1001"^^xsd:string ,
+                                     "FTT:1060"^^xsd:string ,
+                                     "FTT:1061"^^xsd:string ,
+                                     "FTT:1118"^^xsd:string ,
+                                     "FTT:1180"^^xsd:string ,
+                                     "FTT:1190"^^xsd:string ,
+                                     "FTT:1206"^^xsd:string ,
+                                     "FTT:1207"^^xsd:string ,
+                                     "FTT:1226"^^xsd:string ,
+                                     "FTT:184"^^xsd:string ,
+                                     "FTT:185"^^xsd:string ,
+                                     "FTT:228"^^xsd:string ,
+                                     "FTT:281"^^xsd:string ,
+                                     "FTT:480"^^xsd:string ,
+                                     "FTT:716"^^xsd:string ,
+                                     "FTT:883"^^xsd:string ,
+                                     "FTT:934"^^xsd:string ,
+                                     "FTT:945"^^xsd:string ,
+                                     "FTT:983"^^xsd:string ,
+                                     "Geonames:H.WTLD"^^xsd:string ;
+                  
+                  oboInOwl:hasNarrowSynonym "LacustrineWetland"^^xsd:string ,
+                                            "MarineWetland"^^xsd:string ,
+                                            "PalustrineWetland"^^xsd:string ,
+                                            "RiparianWetland"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "SPIRE:Bog"^^xsd:string ,
+                                     "SWEETRealm:Wetland"^^xsd:string ,
+                                     "TGN:21301"^^xsd:string ,
+                                     "TGN:21304"^^xsd:string ,
+                                     "TGN:21305"^^xsd:string ;
+                  
+                  oboInOwl:hasNarrowSynonym "TerrestialWetland"^^xsd:string ;
+                  
+                  oboInOwl:hasExactSynonym "WETLAND"^^xsd:string ,
+                                           "Wetland"^^xsd:string ;
+                  
+                  oboInOwl:hasRelatedSynonym "WetlandRegion"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "Wikipedia:Wetland"^^xsd:string ;
+                  
+                  oboInOwl:hasNarrowSynonym "back marsh"^^xsd:string ,
+                                            "backswamp"^^xsd:string ,
+                                            "backwater"^^xsd:string ,
+                                            "barrier flat"^^xsd:string ,
+                                            "blanket bog"^^xsd:string ,
+                                            "bog"^^xsd:string ,
+                                            "cienaga"^^xsd:string ,
+                                            "dismal"^^xsd:string ,
+                                            "everglade"^^xsd:string ,
+                                            "floating marsh"^^xsd:string ,
+                                            "forested wetland"^^xsd:string ,
+                                            "marsh"^^xsd:string ,
+                                            "mire"^^xsd:string ;
+                  
+                  oboInOwl:hasRelatedSynonym "moor"^^xsd:string ,
+                                             "morass"^^xsd:string ;
+                  
+                  oboInOwl:hasNarrowSynonym "mud flat"^^xsd:string ;
+                  
+                  oboInOwl:hasRelatedSynonym "muskeg"^^xsd:string ;
+                  
+                  oboInOwl:hasNarrowSynonym "peat cutting area"^^xsd:string ,
+                                            "peatland"^^xsd:string ,
+                                            "quagmire"^^xsd:string ,
+                                            "quaking bog"^^xsd:string ,
+                                            "riparian area"^^xsd:string ,
+                                            "slash"^^xsd:string ,
+                                            "slough"^^xsd:string ,
+                                            "slue"^^xsd:string ,
+                                            "swamp forest"^^xsd:string ,
+                                            "tulelands"^^xsd:string ;
+                  
+                  oboInOwl:hasExactSynonym "wetland"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00000045
+
+obo:ENVO_00000045 rdf:type owl:Class ;
+                  
+                  rdfs:label "estuary"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00000230 ,
+                                  obo:ENVO_00000386 ;
+                  
+                  obo:IAO_0000115 "A semi-enclosed coastal body of water with one or more rivers or streams flowing into it, and with a free connection to the open sea."^^xsd:string ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00000045"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "EcoLexicon:estuary"^^xsd:string ;
+                  
+                  oboInOwl:hasExactSynonym "Estuary"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "FTT:234"^^xsd:string ,
+                                     "Geonames:H.ESTY"^^xsd:string ,
+                                     "SWEETRealm:Estuary"^^xsd:string ,
+                                     "TGN:21152"^^xsd:string ,
+                                     "Wikipedia:Estuary"^^xsd:string ;
+                  
+                  oboInOwl:hasExactSynonym "estuary"^^xsd:string ;
+                  
+                  oboInOwl:hasRelatedSynonym "inlet"^^xsd:string ;
+                  
+                  oboInOwl:hasBroadSynonym "mouth"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00000063
+
+obo:ENVO_00000063 rdf:type owl:Class ;
+                  
+                  rdfs:label "water body"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00000012 ;
+                  
+                  obo:IAO_0000115 "An accumulation of water of varying size."^^xsd:string ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00000063"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "EcoLexicon:waterbody"^^xsd:string ,
+                                     "FTT:131"^^xsd:string ,
+                                     "FTT:280"^^xsd:string ,
+                                     "FTT:827"^^xsd:string ,
+                                     "SWEETRealm:BodyOfWater"^^xsd:string ,
+                                     "TGN:21100"^^xsd:string ,
+                                     "TGN:21101"^^xsd:string ;
+                  
+                  rdfs:comment "Wikipedia: The term body of water most often refers to large accumulations of water, such as oceans, seas, and lakes, but it includes smaller pools of water such as ponds, wetlands, or more rarely, puddles. A body of water does not have to be still or contained; Rivers, streams, canals, and other geographical features where water moves from one place to another are also considered bodies of water."^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "Wikipedia:Water_body"^^xsd:string ;
+                  
+                  oboInOwl:hasExactSynonym "aquatic feature"^^xsd:string ,
+                                           "bodies of water"^^xsd:string ,
+                                           "body of water"^^xsd:string ;
+                  
+                  oboInOwl:hasBroadSynonym "hydrographic feature"^^xsd:string ;
+                  
+                  oboInOwl:hasExactSynonym "waterbody"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00000121
+
+obo:ENVO_00000121 rdf:type owl:Class ;
+                  
+                  rdfs:label "artificial channel"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00000395 ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00000121"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "EcoLexicon:artificial_channel"^^xsd:string ;
+                  
+                  oboInOwl:hasRelatedSynonym "flume"^^xsd:string ,
+                                             "improved channel"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00000230
+
+obo:ENVO_00000230 rdf:type owl:Class ;
+                  
+                  rdfs:label "coastal wetland"^^xsd:string ;
+                  
+                  owl:equivalentClass [ rdf:type owl:Class ;
+                                        owl:intersectionOf ( obo:ENVO_00000043
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty obo:BFO_0000050 ;
+                                                               owl:someValuesFrom obo:ENVO_00000303
+                                                             ]
+                                                           )
+                                      ] ;
+                  
+                  rdfs:subClassOf obo:ENVO_00000043 ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:BFO_0000050 ;
+                                    owl:someValuesFrom obo:ENVO_00000303
+                                  ] ;
+                  
+                  obo:IAO_0000115 "A wetland associated with the part of the land adjoining or near a sea or ocean."^^xsd:string ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00000230"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "Wikipedia:Coastal_wetland"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00000303
+
+obo:ENVO_00000303 rdf:type owl:Class ;
+                  
+                  rdfs:label "coast"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00000012 ;
+                  
+                  oboInOwl:hasExactSynonym "COAST"^^xsd:string ;
+                  
+                  oboInOwl:hasRelatedSynonym "CoastalRegion"^^xsd:string ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00000303"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "EcoLexicon:coast"^^xsd:string ,
+                                     "EcoLexicon:sea_coast"^^xsd:string ,
+                                     "FTT:500"^^xsd:string ,
+                                     "Geonames:L.CST"^^xsd:string ;
+                  
+                  oboInOwl:hasRelatedSynonym "Littoral"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "SPIRE:Coastal"^^xsd:string ,
+                                     "SPIRE:Littoral"^^xsd:string ,
+                                     "SWEETRealm:CoastalRegion"^^xsd:string ,
+                                     "TGN:21483"^^xsd:string ;
+                  
+                  obo:IAO_0000115 "The general region of indefinite width that extends from the sea inland to the first major change in terrain features."^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "Wikipedia:Coast"^^xsd:string ;
+                  
+                  oboInOwl:hasExactSynonym "coast"^^xsd:string ;
+                  
+                  oboInOwl:hasRelatedSynonym "coast line"^^xsd:string ,
+                                             "coastal area"^^xsd:string ,
+                                             "coastal plain"^^xsd:string ,
+                                             "coastline"^^xsd:string ,
+                                             "rivage"^^xsd:string ;
+                  
+                  oboInOwl:hasExactSynonym "sea coast"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00000385
+
+obo:ENVO_00000385 rdf:type owl:Class ;
+                  
+                  rdfs:label "stream mouth"^^xsd:string ;
+                  
+                  owl:equivalentClass [ rdf:type owl:Class ;
+                                        owl:intersectionOf ( obo:ENVO_00000479
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty obo:BFO_0000050 ;
+                                                               owl:someValuesFrom obo:ENVO_00000023
+                                                             ]
+                                                           )
+                                      ] ;
+                  
+                  rdfs:subClassOf obo:ENVO_00000479 ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:BFO_0000050 ;
+                                    owl:someValuesFrom obo:ENVO_00000023
+                                  ] ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00000385"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "FTT:105"^^xsd:string ,
+                                     "FTT:1222"^^xsd:string ,
+                                     "Geonames:H.STMM"^^xsd:string ;
+                  
+                  obo:IAO_0000115 "The place where a stream discharges into a lagoon, lake, or the sea."^^xsd:string ;
+                  
+                  oboInOwl:hasBroadSynonym "stream"^^xsd:string ;
+                  
+                  oboInOwl:hasExactSynonym "stream mouth"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00000386
+
+obo:ENVO_00000386 rdf:type owl:Class ;
+                  
+                  rdfs:label "river mouth"^^xsd:string ;
+                  
+                  owl:equivalentClass [ rdf:type owl:Class ;
+                                        owl:intersectionOf ( obo:ENVO_00000479
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty obo:BFO_0000050 ;
+                                                               owl:someValuesFrom obo:ENVO_00000022
+                                                             ]
+                                                           )
+                                      ] ;
+                  
+                  rdfs:subClassOf obo:ENVO_00000385 ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:BFO_0000050 ;
+                                    owl:someValuesFrom obo:ENVO_00000022
+                                  ] ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00000386"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "TGN:21156"^^xsd:string ;
+                  
+                  obo:IAO_0000115 "The end of a stream where it enters a standing water body such as a lake, sea or ocean."^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "Wikipedia:River_mouth"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00000395
+
+obo:ENVO_00000395 rdf:type owl:Class ;
+                  
+                  rdfs:label "channel"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00000029 ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00000395"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "EcoLexicon:channel"^^xsd:string ,
+                                     "EcoLexicon:sea_channel"^^xsd:string ,
+                                     "FTT:1192"^^xsd:string ,
+                                     "FTT:233"^^xsd:string ,
+                                     "FTT:461"^^xsd:string ,
+                                     "FTT:462"^^xsd:string ,
+                                     "FTT:463"^^xsd:string ,
+                                     "FTT:464"^^xsd:string ,
+                                     "FTT:465"^^xsd:string ,
+                                     "FTT:466"^^xsd:string ,
+                                     "FTT:468"^^xsd:string ,
+                                     "FTT:469"^^xsd:string ,
+                                     "FTT:470"^^xsd:string ,
+                                     "Geonames:H.CHN"^^xsd:string ,
+                                     "Geonames:U.SCNU"^^xsd:string ,
+                                     "Geonames:U.SCSU"^^xsd:string ,
+                                     "SWEETRealm:Channel"^^xsd:string ,
+                                     "TGN:21137"^^xsd:string ,
+                                     "TGN:23451"^^xsd:string ;
+                  
+                  obo:IAO_0000115 "The physical confine of a river, slough or ocean strait consisting of a bed and banks."^^xsd:string ;
+                  
+                  oboInOwl:hasRelatedSynonym "WaterChannel"^^xsd:string ,
+                                             "channel"^^xsd:string ,
+                                             "chutes (hydrographic)"^^xsd:string ,
+                                             "improved channel"^^xsd:string ,
+                                             "inlet (hydrographic)"^^xsd:string ,
+                                             "reach (hydrographic)"^^xsd:string ;
+                  
+                  oboInOwl:hasExactSynonym "sea channel"^^xsd:string ;
+                  
+                  oboInOwl:hasRelatedSynonym "sea channel"^^xsd:string ;
+                  
+                  oboInOwl:hasExactSynonym "sea channels"^^xsd:string ;
+                  
+                  oboInOwl:hasRelatedSynonym "seachannel (seafloor)"^^xsd:string ,
+                                             "sound (bodies of water)"^^xsd:string ,
+                                             "strait"^^xsd:string ;
+                  
+                  oboInOwl:hasNarrowSynonym "stream channel"^^xsd:string ,
+                                            "undersea channel"^^xsd:string ;
+                  
+                  oboInOwl:hasBroadSynonym "watercourse"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00000479
+
+obo:ENVO_00000479 rdf:type owl:Class ;
+                  
+                  rdfs:label "mouth"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00000029 ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00000479"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "EcoLexicon:outlet"^^xsd:string ;
+                  
+                  oboInOwl:hasExactSynonym "MOUTH"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "SWEETRealm:Mouth"^^xsd:string ;
+                  
+                  obo:IAO_0000115 "The exit or point of discharge of a stream into another stream, lake or sea."^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "Wikipedia:Mouth"^^xsd:string ;
+                  
+                  oboInOwl:hasRelatedSynonym "outlet"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00001999
+
+obo:ENVO_00001999 rdf:type owl:Class ;
+                  
+                  rdfs:label "marine water body"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00000063 ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00001999"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00002001
+
+obo:ENVO_00002001 rdf:type owl:Class ;
+                  
+                  rdfs:label "waste water"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00002006 ,
+                                  obo:ENVO_00002264 ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00002001"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "EcoLexicon:waste_water"^^xsd:string ,
+                                     "SWEETRealm:Wastewater"^^xsd:string ;
+                  
+                  obo:IAO_0000115 "Water that has been adversely affected in quality by anthropogenic influence."^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "Wikipedia:Waste_water"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl ;
+                  
+                  oboInOwl:inSubset <http://purl.obolibrary.org/obo/envo#EnvO-Lite-GSC> .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00002006
+
+obo:ENVO_00002006 rdf:type owl:Class ;
+                  
+                  rdfs:label "water"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00010483 ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00002006"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "EcoLexicon:water"^^xsd:string ;
+                  
+                  obo:IAO_0000115 "The liquid form of dihydrogen monoxide."^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "Wikipedia:Water"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00002010
+
+obo:ENVO_00002010 rdf:type owl:Class ;
+                  
+                  rdfs:label "saline water"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00002006 ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00002010"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "EcoLexicon:saltwater"^^xsd:string ,
+                                     "SWEETRealm:SalineWater"^^xsd:string ,
+                                     "SWEETRealm:SaltWater"^^xsd:string ,
+                                     "Wikipedia:Saline_water"^^xsd:string ;
+                  
+                  oboInOwl:hasExactSynonym "salt water"^^xsd:string ;
+                  
+                  oboInOwl:hasRelatedSynonym "seawater"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00002011
+
+obo:ENVO_00002011 rdf:type owl:Class ;
+                  
+                  rdfs:label "fresh water"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00002006 ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00002011"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "EcoLexicon:fresh_water"^^xsd:string ,
+                                     "SWEETRealm:FreshWater"^^xsd:string ,
+                                     "Wikipedia:Fresh_water"^^xsd:string ;
+                  
+                  oboInOwl:hasExactSynonym "freshwater" ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00002012
+
+obo:ENVO_00002012 rdf:type owl:Class ;
+                  
+                  rdfs:label "hypersaline water"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00002010 ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00002012"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00002018
+
+obo:ENVO_00002018 rdf:type owl:Class ;
+                  
+                  rdfs:label "sewage"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00002001 ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00002018"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "SWEETRealm:Sewage"^^xsd:string ;
+                  
+                  obo:IAO_0000115 "Wastewater that is contaminated with feces or urine,"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "Wikipedia:Sewage"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00002019
+
+obo:ENVO_00002019 rdf:type owl:Class ;
+                  
+                  rdfs:label "brackish water"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00002010 ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00002019"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "EcoLexicon:brackish_water"^^xsd:string ,
+                                     "SPIRE:Brackish_water"^^xsd:string ,
+                                     "SWEETRealm:BrackishWater"^^xsd:string ,
+                                     "Wikipedia:Brackish_water"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00002041
+
+obo:ENVO_00002041 rdf:type owl:Class ;
+                  
+                  rdfs:label "ground water"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00002006 ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00002041"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "EcoLexicon:groundwater"^^xsd:string ,
+                                     "SWEETRealm:Groundwater"^^xsd:string ,
+                                     "Wikipedia:Ground_water"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00002042
+
+obo:ENVO_00002042 rdf:type owl:Class ;
+                  
+                  rdfs:label "surface water"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00002006 ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00002042"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "EcoLexicon:surface_water"^^xsd:string ,
+                                     "SWEETRealm:SurfaceWater"^^xsd:string ,
+                                     "Wikipedia:Surface_water"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00002137
+
+obo:ENVO_00002137 rdf:type owl:Class ;
+                  
+                  rdfs:label "brackish estuary"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00000045 ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00002137"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00002141
+
+obo:ENVO_00002141 rdf:type owl:Class ;
+                  
+                  rdfs:label "leachate"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00002006 ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00002141"^^xsd:string ;
+                  
+                  obo:IAO_0000115 "The liquid produced when water percolates through any permeable material. It can contain either dissolved or suspended material, or usually both."^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "Wikipedia:Leachate"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00002142
+
+obo:ENVO_00002142 rdf:type owl:Class ;
+                  
+                  rdfs:label "borax leachate"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00002141 ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00002142"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00002149
+
+obo:ENVO_00002149 rdf:type owl:Class ;
+                  
+                  rdfs:label "sea water"^^xsd:string ;
+                  
+                  owl:equivalentClass [ rdf:type owl:Class ;
+                                        owl:intersectionOf ( obo:ENVO_00002010
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty obo:BFO_0000050 ;
+                                                               owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                    owl:unionOf ( obo:ENVO_00000015
+                                                                                                  obo:ENVO_00000016
+                                                                                                )
+                                                                                  ]
+                                                             ]
+                                                           )
+                                      ] ;
+                  
+                  rdfs:subClassOf obo:ENVO_00002010 ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:BFO_0000050 ;
+                                    owl:someValuesFrom [ rdf:type owl:Class ;
+                                                         owl:unionOf ( obo:ENVO_00000015
+                                                                       obo:ENVO_00000016
+                                                                     )
+                                                       ]
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:BFO_0000050 ;
+                                    owl:someValuesFrom obo:ENVO_00000016
+                                  ] ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00002149"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "EcoLexicon:sea_water"^^xsd:string ,
+                                     "SWEETRealm:SeaWater"^^xsd:string ,
+                                     "Wikipedia:Sea_water"^^xsd:string ;
+                  
+                  oboInOwl:hasExactSynonym "ocean water" ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00002150
+
+obo:ENVO_00002150 rdf:type owl:Class ;
+                  
+                  rdfs:label "coastal water"^^xsd:string ;
+                  
+                  owl:equivalentClass [ rdf:type owl:Class ;
+                                        owl:intersectionOf ( obo:ENVO_00002149
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty obo:RO_0002220 ;
+                                                               owl:someValuesFrom obo:ENVO_00000303
+                                                             ]
+                                                           )
+                                      ] ;
+                  
+                  rdfs:subClassOf obo:ENVO_00002149 ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:RO_0002220 ;
+                                    owl:someValuesFrom obo:ENVO_00000303
+                                  ] ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00002150"^^xsd:string ;
+                  
+                  oboInOwl:hasRelatedSynonym "coastal water"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00002158
+
+obo:ENVO_00002158 rdf:type owl:Class ;
+                  
+                  rdfs:label "ditch water"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00002011 ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:BFO_0000050 ;
+                                    owl:someValuesFrom obo:ENVO_00000037
+                                  ] ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00002158"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00002159
+
+obo:ENVO_00002159 rdf:type owl:Class ;
+                  
+                  rdfs:label "drilling bore water"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00002006 ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00002159"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00002186
+
+obo:ENVO_00002186 rdf:type owl:Class ;
+                  
+                  rdfs:label "contaminated water"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00002006 ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00002186"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "EcoLexicon:water_pollution"^^xsd:string ,
+                                     "Wikipedia:Contaminated_water"^^xsd:string ;
+                  
+                  oboInOwl:hasExactSynonym "polluted water"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00002193
+
+obo:ENVO_00002193 rdf:type owl:Class ;
+                  
+                  rdfs:label "pulp-bleaching waste water"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00002001 ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00002193"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00002194
+
+obo:ENVO_00002194 rdf:type owl:Class ;
+                  
+                  rdfs:label "oil field production water"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00002006 ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00002194"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00002223
+
+obo:ENVO_00002223 rdf:type owl:Class ;
+                  
+                  rdfs:label "oligotrophic water"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00002006 ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00002223"^^xsd:string ;
+                  
+                  obo:IAO_0000115 "Water with a very low nutrient level."^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00002224
+
+obo:ENVO_00002224 rdf:type owl:Class ;
+                  
+                  rdfs:label "eutrophic water"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00002006 ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00002224"^^xsd:string ;
+                  
+                  obo:IAO_0000115 "Water with a high nutrient level."^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00002225
+
+obo:ENVO_00002225 rdf:type owl:Class ;
+                  
+                  rdfs:label "mesotrophic water"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00002006 ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00002225"^^xsd:string ;
+                  
+                  obo:IAO_0000115 "Water with a nutrient level intermediate between eutrophic and oligotrophic."^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00002228
+
+obo:ENVO_00002228 rdf:type owl:Class ;
+                  
+                  rdfs:label "pond water"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00002011 ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:BFO_0000050 ;
+                                    owl:someValuesFrom obo:ENVO_00000033
+                                  ] ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00002228"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00002264
+
+obo:ENVO_00002264 rdf:type owl:Class ;
+                  
+                  rdfs:label "waste"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_0010001 ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00002264"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "EcoLexicon:waste"^^xsd:string ,
+                                     "SWEETRealm:Waste"^^xsd:string ,
+                                     "Wikipedia:Waste"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00002297
+
+obo:ENVO_00002297 rdf:type owl:Class ;
+                  
+                  rdfs:label "environmental feature"^^xsd:string ;
+                  
+                  rdfs:comment "A material entity determines an environmental system when its removal would cause the collapse of that system. For example, a seamount determines a seamount environment, acting as its 'hub'. This class is currently being aligned to the Basic Formal Ontology. Following this alignment, its definition and the definitions of its subclasses will be revised."^^xsd:string ;
+                  
+                  obo:IAO_0000115 "A material entity which determines an environmental system."^^xsd:string ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00002297"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00003044
+
+obo:ENVO_00003044 rdf:type owl:Class ;
+                  
+                  rdfs:label "brine"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00002012 ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00003044"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "EcoLexicon:brine"^^xsd:string ,
+                                     "SWEETRealm:Brine"^^xsd:string ;
+                  
+                  obo:IAO_0000115 "Water saturated or nearly saturated with salt (NaCl). It is used (now less popular than historically) to preserve vegetables, fish, and meat."^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "Wikipedia:Brine"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00003045
+
+obo:ENVO_00003045 rdf:type owl:Class ;
+                  
+                  rdfs:label "bacon curing brine"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00003044 ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00003045"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00003064
+
+obo:ENVO_00003064 rdf:type owl:Class ;
+                  
+                  rdfs:label "drinking water"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00002011 ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00003064"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "EcoLexicon:drinking_water"^^xsd:string ,
+                                     "SWEETRealm:DrinkingWater"^^xsd:string ,
+                                     "Wikipedia:Drinking_water"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00003065
+
+obo:ENVO_00003065 rdf:type owl:Class ;
+                  
+                  rdfs:label "distilled water"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00002006 ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00003065"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "Wikipedia:Distilled_water"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00003096
+
+obo:ENVO_00003096 rdf:type owl:Class ;
+                  
+                  rdfs:label "tap water"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00002011 ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00003096"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "Wikipedia:Tap_water"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00003097
+
+obo:ENVO_00003097 rdf:type owl:Class ;
+                  
+                  rdfs:label "bore hole water"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00002006 ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00003097"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00005791
+
+obo:ENVO_00005791 rdf:type owl:Class ;
+                  
+                  rdfs:label "sterile water"^^xsd:string ;
+                  
+                  owl:equivalentClass [ rdf:type owl:Class ;
+                                        owl:intersectionOf ( obo:ENVO_00002006
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty obo:RO_0000086 ;
+                                                               owl:someValuesFrom obo:PATO_0000956
+                                                             ]
+                                                           )
+                                      ] ;
+                  
+                  rdfs:subClassOf obo:ENVO_00002006 ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:RO_0000086 ;
+                                    owl:someValuesFrom obo:PATO_0000956
+                                  ] ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00005791"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00005792
+
+obo:ENVO_00005792 rdf:type owl:Class ;
+                  
+                  rdfs:label "underground water"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00002006 ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00005792"^^xsd:string ;
+                  
+                  oboInOwl:hasDbXref "SWEETRealm:UndergroundWater"^^xsd:string ;
+                  
+                  oboInOwl:hasRelatedSynonym "subterranean water"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00005793
+
+obo:ENVO_00005793 rdf:type owl:Class ;
+                  
+                  rdfs:label "muddy water"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00002006 ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00005793"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00010483
+
+obo:ENVO_00010483 rdf:type owl:Class ;
+                  
+                  rdfs:label "environmental material"^^xsd:string ;
+                  
+                  obo:IAO_0000115 "A portion of environmental material is a fiat object which forms the medium or part of the medium of an environmental system."^^xsd:string ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:00010483"^^xsd:string ;
+                  
+                  rdfs:comment "Everything under this parent must be a mass noun. This class is currently being aligned to the Basic Formal Ontology. Following this alignment, its definition and the definitions of its subclasses will be revised."^^xsd:string ;
+                  
+                  oboInOwl:hasExactSynonym "portion of environmental material"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_0010001
+
+obo:ENVO_0010001 rdf:type owl:Class ;
+                 
+                 rdfs:label "anthropogenic environmental material"^^xsd:string ;
+                 
+                 rdfs:subClassOf obo:ENVO_00010483 ;
+                 
+                 obo:IAO_0000115 "Anthropogenic material in or on which organisms may live."^^xsd:string ;
+                 
+                 oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                 
+                 oboInOwl:id "ENVO:0010001"^^xsd:string ;
+                 
+                 obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_01000134
+
+obo:ENVO_01000134 rdf:type owl:Class ;
+                  
+                  rdfs:label "hydrothermal fluid"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00002141 ;
+                  
+                  oboInOwl:creation_date "2010-03-20T08:19:19Z"^^xsd:string ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:01000134"^^xsd:string ;
+                  
+                  obo:IAO_0000115 "High temperature water ejected from hydrothermal vents and laden with dissolved metals and minerals as a result of percolation through crustal rocks."^^xsd:string ;
+                  
+                  oboInOwl:created_by "pbuttigieg"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_01000173
+
+obo:ENVO_01000173 rdf:type owl:Class ;
+                  
+                  rdfs:label "anoxic water"^^xsd:string ;
+                  
+                  rdfs:subClassOf obo:ENVO_00002006 ;
+                  
+                  oboInOwl:creation_date "2010-03-21T06:05:53Z"^^xsd:string ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:01000173"^^xsd:string ;
+                  
+                  obo:IAO_0000115 "Water depleted of dissolved oxygen."^^xsd:string ;
+                  
+                  oboInOwl:created_by "pbuttigieg"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_01000301
+
+obo:ENVO_01000301 rdf:type owl:Class ;
+                  
+                  rdfs:label "estuarine water"^^xsd:string ;
+                  
+                  owl:equivalentClass [ rdf:type owl:Class ;
+                                        owl:intersectionOf ( obo:ENVO_00002019
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty obo:BFO_0000050 ;
+                                                               owl:someValuesFrom obo:ENVO_00002137
+                                                             ]
+                                                           )
+                                      ] ;
+                  
+                  rdfs:subClassOf obo:ENVO_00002019 ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:BFO_0000050 ;
+                                    owl:someValuesFrom obo:ENVO_00002137
+                                  ] ;
+                  
+                  oboInOwl:creation_date "2013-10-19T11:30:46Z"^^xsd:string ;
+                  
+                  obo:IAO_0000115 "Brackish water which is part of an estuary."^^xsd:string ;
+                  
+                  oboInOwl:hasOBONamespace "ENVO"^^xsd:string ;
+                  
+                  oboInOwl:id "ENVO:01000301"^^xsd:string ;
+                  
+                  oboInOwl:created_by "pbuttigieg"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/ENVO_01001305
+
+obo:ENVO_01001305 rdf:type owl:Class ;
+                  
+                  rdfs:label "vegetated area" ;
+                  
+                  rdfs:subClassOf obo:ENVO_00000000 ;
+                  
+                  oboInOwl:created_by "ORCID:0000-0002-4366-3088" ;
+                  
+                  obo:IAO_0000115 "A vegetated area is a geographic feature which has ground cover dominated by plant communities." ;
+                  
+                  obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/PATO_0000001
+
+obo:PATO_0000001 rdf:type owl:Class ;
+                 
+                 rdfs:label "quality"^^xsd:string ;
+                 
+                 obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/PATO_0000274
+
+obo:PATO_0000274 rdf:type owl:Class ;
+                 
+                 rdfs:label "fertility"^^xsd:string ;
+                 
+                 rdfs:subClassOf obo:PATO_0001434 ;
+                 
+                 obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/PATO_0000956
+
+obo:PATO_0000956 rdf:type owl:Class ;
+                 
+                 rdfs:label "sterile"^^xsd:string ;
+                 
+                 rdfs:subClassOf obo:PATO_0000274 ;
+                 
+                 obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/PATO_0001241
+
+obo:PATO_0001241 rdf:type owl:Class ;
+                 
+                 rdfs:label "physical object quality"^^xsd:string ;
+                 
+                 rdfs:subClassOf obo:PATO_0000001 ;
+                 
+                 obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/PATO_0001434
+
+obo:PATO_0001434 rdf:type owl:Class ;
+                 
+                 rdfs:label "reproductive quality"^^xsd:string ;
+                 
+                 rdfs:subClassOf obo:PATO_0001995 ;
+                 
+                 obo:IAO_0000412 obo:envo.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/PATO_0001995
+
+obo:PATO_0001995 rdf:type owl:Class ;
+                 
+                 rdfs:label "organismal quality"^^xsd:string ;
+                 
+                 rdfs:subClassOf obo:PATO_0001241 ;
+                 
+                 obo:IAO_0000412 obo:envo.owl .
+
+
+
+
+###  Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net
+

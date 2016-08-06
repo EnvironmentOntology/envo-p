@@ -1,0 +1,202 @@
+Prefix: : <http://purl.obolibrary.org/obo/>
+Prefix: IAO: <http://purl.obolibrary.org/obo/IAO_>
+Prefix: DOSDP: <http://geneontology.org/foo/>
+Prefix: oio: <http://www.geneontology.org/formats/oboInOwl#>
+Prefix: ENVO: <http://purl.obolibrary.org/obo/ENVO_>
+Prefix: CHEBI: <http://purl.obolibrary.org/obo/CHEBI_>
+Prefix: PATO: <http://purl.obolibrary.org/obo/PATO_>
+Prefix: RO: <http://purl.obolibrary.org/obo/RO_>
+
+ ## Auto-generated
+
+Ontology: <http://purl.obolibrary.org/obo/auto>
+AnnotationProperty: IAO:0000115
+AnnotationProperty: oba/patterns/entity_attribute/location
+AnnotationProperty: oba/patterns/entity_attribute/entity
+AnnotationProperty: oba/patterns/entity_attribute/attribute
+AnnotationProperty: DOSDP:applies-pattern
+AnnotationProperty: oio:hasExactSynonym
+ObjectProperty: RO_0000052 ## inheres in
+ObjectProperty: RO_0002314 ## inheres in part of
+ObjectProperty: BFO_0000050 ## part of
+## Auto-generated classes
+
+Class: ENVO:00010483 ## environmental material
+Class: CHEBI:27594 ## carbon atom
+Class: PATO:0001536 ## solubility
+## {"location": "ENVO:00010483", "entity": "CHEBI:27594", "attribute": "PATO:0001536"}
+Class: <urn:uuid:a59ed7f2-ecb9-4c27-b053-e72ba441fa8b>
+ Annotations: rdfs:label "solubility of carbon atom in environmental material"
+ Annotations: IAO:0000115 "The solubility of a carbon atom when measured in environmental material."
+ Annotations: oio:hasExactSynonym "environmental material carbon atom solubility"
+ EquivalentTo: PATO:0001536 and RO_0000052 some (CHEBI:27594 and BFO_0000050 some ENVO:00010483) ## solubility and 'inheres in' some (carbon atom and 'part of' some environmental material)
+
+Class: ENVO:00001998 ## soil
+Class: CHEBI:27594 ## carbon atom
+Class: PATO:0001536 ## solubility
+## {"location": "ENVO:00001998", "entity": "CHEBI:27594", "attribute": "PATO:0001536"}
+Class: <urn:uuid:c2212744-e32f-476c-aafd-420a5fe6e0b8>
+ Annotations: rdfs:label "solubility of carbon atom in soil"
+ Annotations: IAO:0000115 "The solubility of a carbon atom when measured in soil."
+ Annotations: oio:hasExactSynonym "soil carbon atom solubility"
+ EquivalentTo: PATO:0001536 and RO_0000052 some (CHEBI:27594 and BFO_0000050 some ENVO:00001998) ## solubility and 'inheres in' some (carbon atom and 'part of' some soil)
+
+Class: ENVO:00002006 ## water
+Class: CHEBI:27594 ## carbon atom
+Class: PATO:0001536 ## solubility
+## {"location": "ENVO:00002006", "entity": "CHEBI:27594", "attribute": "PATO:0001536"}
+Class: <urn:uuid:fc0df622-9f2d-484a-812c-4ea4d0165804>
+ Annotations: rdfs:label "solubility of carbon atom in water"
+ Annotations: IAO:0000115 "The solubility of a carbon atom when measured in water."
+ Annotations: oio:hasExactSynonym "water carbon atom solubility"
+ EquivalentTo: PATO:0001536 and RO_0000052 some (CHEBI:27594 and BFO_0000050 some ENVO:00002006) ## solubility and 'inheres in' some (carbon atom and 'part of' some water)
+
+Class: ENVO:00010483 ## environmental material
+Class: CHEBI:27594 ## carbon atom
+Class: PATO:0000070 ## amount
+## {"location": "ENVO:00010483", "entity": "CHEBI:27594", "attribute": "PATO:0000070"}
+Class: <urn:uuid:b81eaabe-513b-472a-9846-40960b0e99a0>
+ Annotations: rdfs:label "amount of carbon atom in environmental material"
+ Annotations: IAO:0000115 "The amount of a carbon atom when measured in environmental material."
+ Annotations: oio:hasExactSynonym "environmental material carbon atom amount"
+ EquivalentTo: PATO:0000070 and RO_0000052 some (CHEBI:27594 and BFO_0000050 some ENVO:00010483) ## amount and 'inheres in' some (carbon atom and 'part of' some environmental material)
+
+Class: ENVO:00001998 ## soil
+Class: CHEBI:27594 ## carbon atom
+Class: PATO:0000070 ## amount
+## {"location": "ENVO:00001998", "entity": "CHEBI:27594", "attribute": "PATO:0000070"}
+Class: <urn:uuid:06cc4c4e-c72f-4974-bfc9-cf7eb5c8445e>
+ Annotations: rdfs:label "amount of carbon atom in soil"
+ Annotations: IAO:0000115 "The amount of a carbon atom when measured in soil."
+ Annotations: oio:hasExactSynonym "soil carbon atom amount"
+ EquivalentTo: PATO:0000070 and RO_0000052 some (CHEBI:27594 and BFO_0000050 some ENVO:00001998) ## amount and 'inheres in' some (carbon atom and 'part of' some soil)
+
+Class: ENVO:00002006 ## water
+Class: CHEBI:27594 ## carbon atom
+Class: PATO:0000070 ## amount
+## {"location": "ENVO:00002006", "entity": "CHEBI:27594", "attribute": "PATO:0000070"}
+Class: <urn:uuid:035884ad-f240-41c8-b964-99165c819f8b>
+ Annotations: rdfs:label "amount of carbon atom in water"
+ Annotations: IAO:0000115 "The amount of a carbon atom when measured in water."
+ Annotations: oio:hasExactSynonym "water carbon atom amount"
+ EquivalentTo: PATO:0000070 and RO_0000052 some (CHEBI:27594 and BFO_0000050 some ENVO:00002006) ## amount and 'inheres in' some (carbon atom and 'part of' some water)
+
+Class: ENVO:00010483 ## environmental material
+Class: CHEBI:27594 ## carbon atom
+Class: PATO:0000033 ## concentration of
+## {"location": "ENVO:00010483", "entity": "CHEBI:27594", "attribute": "PATO:0000033"}
+Class: <urn:uuid:4155b153-87d6-4dd7-b806-00766021be9a>
+ Annotations: rdfs:label "concentration of of carbon atom in environmental material"
+ Annotations: IAO:0000115 "The concentration of of a carbon atom when measured in environmental material."
+ Annotations: oio:hasExactSynonym "environmental material carbon atom concentration of"
+ EquivalentTo: PATO:0000033 and RO_0000052 some (CHEBI:27594 and BFO_0000050 some ENVO:00010483) ## concentration of and 'inheres in' some (carbon atom and 'part of' some environmental material)
+
+Class: ENVO:00001998 ## soil
+Class: CHEBI:27594 ## carbon atom
+Class: PATO:0000033 ## concentration of
+## {"location": "ENVO:00001998", "entity": "CHEBI:27594", "attribute": "PATO:0000033"}
+Class: <urn:uuid:e17ea55b-2b22-41ca-8781-0ace9ea20c0c>
+ Annotations: rdfs:label "concentration of of carbon atom in soil"
+ Annotations: IAO:0000115 "The concentration of of a carbon atom when measured in soil."
+ Annotations: oio:hasExactSynonym "soil carbon atom concentration of"
+ EquivalentTo: PATO:0000033 and RO_0000052 some (CHEBI:27594 and BFO_0000050 some ENVO:00001998) ## concentration of and 'inheres in' some (carbon atom and 'part of' some soil)
+
+Class: ENVO:00002006 ## water
+Class: CHEBI:27594 ## carbon atom
+Class: PATO:0000033 ## concentration of
+## {"location": "ENVO:00002006", "entity": "CHEBI:27594", "attribute": "PATO:0000033"}
+Class: <urn:uuid:d79212a5-24b1-4b71-a815-571306fbf0ff>
+ Annotations: rdfs:label "concentration of of carbon atom in water"
+ Annotations: IAO:0000115 "The concentration of of a carbon atom when measured in water."
+ Annotations: oio:hasExactSynonym "water carbon atom concentration of"
+ EquivalentTo: PATO:0000033 and RO_0000052 some (CHEBI:27594 and BFO_0000050 some ENVO:00002006) ## concentration of and 'inheres in' some (carbon atom and 'part of' some water)
+
+Class: ENVO:00010483 ## environmental material
+Class: CHEBI:25555 ## nitrogen atom
+Class: PATO:0001536 ## solubility
+## {"location": "ENVO:00010483", "entity": "CHEBI:25555", "attribute": "PATO:0001536"}
+Class: <urn:uuid:84e01e8e-06b2-4108-a450-8d926bc9be6e>
+ Annotations: rdfs:label "solubility of nitrogen atom in environmental material"
+ Annotations: IAO:0000115 "The solubility of a nitrogen atom when measured in environmental material."
+ Annotations: oio:hasExactSynonym "environmental material nitrogen atom solubility"
+ EquivalentTo: PATO:0001536 and RO_0000052 some (CHEBI:25555 and BFO_0000050 some ENVO:00010483) ## solubility and 'inheres in' some (nitrogen atom and 'part of' some environmental material)
+
+Class: ENVO:00001998 ## soil
+Class: CHEBI:25555 ## nitrogen atom
+Class: PATO:0001536 ## solubility
+## {"location": "ENVO:00001998", "entity": "CHEBI:25555", "attribute": "PATO:0001536"}
+Class: <urn:uuid:905f2eb9-29d1-4874-8c78-1881333d374c>
+ Annotations: rdfs:label "solubility of nitrogen atom in soil"
+ Annotations: IAO:0000115 "The solubility of a nitrogen atom when measured in soil."
+ Annotations: oio:hasExactSynonym "soil nitrogen atom solubility"
+ EquivalentTo: PATO:0001536 and RO_0000052 some (CHEBI:25555 and BFO_0000050 some ENVO:00001998) ## solubility and 'inheres in' some (nitrogen atom and 'part of' some soil)
+
+Class: ENVO:00002006 ## water
+Class: CHEBI:25555 ## nitrogen atom
+Class: PATO:0001536 ## solubility
+## {"location": "ENVO:00002006", "entity": "CHEBI:25555", "attribute": "PATO:0001536"}
+Class: <urn:uuid:3d2d8a10-f613-4dbb-b3cf-44cc9216ab70>
+ Annotations: rdfs:label "solubility of nitrogen atom in water"
+ Annotations: IAO:0000115 "The solubility of a nitrogen atom when measured in water."
+ Annotations: oio:hasExactSynonym "water nitrogen atom solubility"
+ EquivalentTo: PATO:0001536 and RO_0000052 some (CHEBI:25555 and BFO_0000050 some ENVO:00002006) ## solubility and 'inheres in' some (nitrogen atom and 'part of' some water)
+
+Class: ENVO:00010483 ## environmental material
+Class: CHEBI:25555 ## nitrogen atom
+Class: PATO:0000070 ## amount
+## {"location": "ENVO:00010483", "entity": "CHEBI:25555", "attribute": "PATO:0000070"}
+Class: <urn:uuid:46ea3981-0690-4e1d-a962-94ebfa89990b>
+ Annotations: rdfs:label "amount of nitrogen atom in environmental material"
+ Annotations: IAO:0000115 "The amount of a nitrogen atom when measured in environmental material."
+ Annotations: oio:hasExactSynonym "environmental material nitrogen atom amount"
+ EquivalentTo: PATO:0000070 and RO_0000052 some (CHEBI:25555 and BFO_0000050 some ENVO:00010483) ## amount and 'inheres in' some (nitrogen atom and 'part of' some environmental material)
+
+Class: ENVO:00001998 ## soil
+Class: CHEBI:25555 ## nitrogen atom
+Class: PATO:0000070 ## amount
+## {"location": "ENVO:00001998", "entity": "CHEBI:25555", "attribute": "PATO:0000070"}
+Class: <urn:uuid:7b1fb203-f3c1-488a-a93f-38b087149f19>
+ Annotations: rdfs:label "amount of nitrogen atom in soil"
+ Annotations: IAO:0000115 "The amount of a nitrogen atom when measured in soil."
+ Annotations: oio:hasExactSynonym "soil nitrogen atom amount"
+ EquivalentTo: PATO:0000070 and RO_0000052 some (CHEBI:25555 and BFO_0000050 some ENVO:00001998) ## amount and 'inheres in' some (nitrogen atom and 'part of' some soil)
+
+Class: ENVO:00002006 ## water
+Class: CHEBI:25555 ## nitrogen atom
+Class: PATO:0000070 ## amount
+## {"location": "ENVO:00002006", "entity": "CHEBI:25555", "attribute": "PATO:0000070"}
+Class: <urn:uuid:caca08cc-e46d-43dc-8809-a1aa906271fa>
+ Annotations: rdfs:label "amount of nitrogen atom in water"
+ Annotations: IAO:0000115 "The amount of a nitrogen atom when measured in water."
+ Annotations: oio:hasExactSynonym "water nitrogen atom amount"
+ EquivalentTo: PATO:0000070 and RO_0000052 some (CHEBI:25555 and BFO_0000050 some ENVO:00002006) ## amount and 'inheres in' some (nitrogen atom and 'part of' some water)
+
+Class: ENVO:00010483 ## environmental material
+Class: CHEBI:25555 ## nitrogen atom
+Class: PATO:0000033 ## concentration of
+## {"location": "ENVO:00010483", "entity": "CHEBI:25555", "attribute": "PATO:0000033"}
+Class: <urn:uuid:791ec6e7-2f18-43d6-8dea-c7ec10f311ad>
+ Annotations: rdfs:label "concentration of of nitrogen atom in environmental material"
+ Annotations: IAO:0000115 "The concentration of of a nitrogen atom when measured in environmental material."
+ Annotations: oio:hasExactSynonym "environmental material nitrogen atom concentration of"
+ EquivalentTo: PATO:0000033 and RO_0000052 some (CHEBI:25555 and BFO_0000050 some ENVO:00010483) ## concentration of and 'inheres in' some (nitrogen atom and 'part of' some environmental material)
+
+Class: ENVO:00001998 ## soil
+Class: CHEBI:25555 ## nitrogen atom
+Class: PATO:0000033 ## concentration of
+## {"location": "ENVO:00001998", "entity": "CHEBI:25555", "attribute": "PATO:0000033"}
+Class: <urn:uuid:f7b8a0ae-fcf6-455a-aaa7-cbde2b83eefb>
+ Annotations: rdfs:label "concentration of of nitrogen atom in soil"
+ Annotations: IAO:0000115 "The concentration of of a nitrogen atom when measured in soil."
+ Annotations: oio:hasExactSynonym "soil nitrogen atom concentration of"
+ EquivalentTo: PATO:0000033 and RO_0000052 some (CHEBI:25555 and BFO_0000050 some ENVO:00001998) ## concentration of and 'inheres in' some (nitrogen atom and 'part of' some soil)
+
+Class: ENVO:00002006 ## water
+Class: CHEBI:25555 ## nitrogen atom
+Class: PATO:0000033 ## concentration of
+## {"location": "ENVO:00002006", "entity": "CHEBI:25555", "attribute": "PATO:0000033"}
+Class: <urn:uuid:1e327425-05b1-44e8-a360-bb760179dd6f>
+ Annotations: rdfs:label "concentration of of nitrogen atom in water"
+ Annotations: IAO:0000115 "The concentration of of a nitrogen atom when measured in water."
+ Annotations: oio:hasExactSynonym "water nitrogen atom concentration of"
+ EquivalentTo: PATO:0000033 and RO_0000052 some (CHEBI:25555 and BFO_0000050 some ENVO:00002006) ## concentration of and 'inheres in' some (nitrogen atom and 'part of' some water)

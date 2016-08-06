@@ -1,0 +1,3337 @@
+@prefix : <http://ontofox.hegroup.org/bwewqkkh.owl#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix chebi: <http://purl.obolibrary.org/obo/chebi#> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@base <http://purl.obolibrary.org/obo/envo_chem/chebi_imports.owl> .
+
+<http://purl.obolibrary.org/obo/envo_chem/chebi_imports.owl> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    Annotation properties
+#
+#################################################################
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000115
+
+obo:IAO_0000115 rdf:type owl:AnnotationProperty ;
+                
+                rdfs:label "definition"^^xsd:string .
+
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000412
+
+obo:IAO_0000412 rdf:type owl:AnnotationProperty ;
+                
+                rdfs:label "imported from"@en .
+
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasAlternativeId
+
+oboInOwl:hasAlternativeId rdf:type owl:AnnotationProperty ;
+                          
+                          rdfs:label "has_alternative_id"^^xsd:string .
+
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasDbXref
+
+oboInOwl:hasDbXref rdf:type owl:AnnotationProperty ;
+                   
+                   rdfs:label "database_cross_reference"^^xsd:string .
+
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+
+oboInOwl:hasExactSynonym rdf:type owl:AnnotationProperty ;
+                         
+                         rdfs:label "has_exact_synonym"^^xsd:string .
+
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasOBONamespace
+
+oboInOwl:hasOBONamespace rdf:type owl:AnnotationProperty ;
+                         
+                         rdfs:label "has_obo_namespace"^^xsd:string .
+
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym
+
+oboInOwl:hasRelatedSynonym rdf:type owl:AnnotationProperty ;
+                           
+                           rdfs:label "has_related_synonym"^^xsd:string .
+
+
+
+###  http://www.geneontology.org/formats/oboInOwl#id
+
+oboInOwl:id rdf:type owl:AnnotationProperty .
+
+
+
+###  http://www.geneontology.org/formats/oboInOwl#is_cyclic
+
+oboInOwl:is_cyclic rdf:type owl:AnnotationProperty .
+
+
+
+###  http://www.geneontology.org/formats/oboInOwl#is_transitive
+
+oboInOwl:is_transitive rdf:type owl:AnnotationProperty .
+
+
+
+###  http://www.geneontology.org/formats/oboInOwl#shorthand
+
+oboInOwl:shorthand rdf:type owl:AnnotationProperty ;
+                   
+                   rdfs:label "shorthand"^^xsd:string .
+
+
+
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://purl.obolibrary.org/obo/RO_0000087
+
+obo:RO_0000087 rdf:type owl:ObjectProperty ;
+               
+               rdfs:label "has role"^^xsd:string ;
+               
+               oboInOwl:is_transitive 0 ;
+               
+               oboInOwl:is_cyclic 0 ;
+               
+               oboInOwl:hasDbXref "RO:0000087"^^xsd:string ;
+               
+               oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+               
+               oboInOwl:id "has_role"^^xsd:string ;
+               
+               oboInOwl:shorthand "has_role"^^xsd:string ;
+               
+               obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/chebi#BFO_0000051
+
+chebi:BFO_0000051 rdf:type owl:ObjectProperty ,
+                           owl:TransitiveProperty ;
+                  
+                  rdfs:label "has part"^^xsd:string ;
+                  
+                  oboInOwl:is_cyclic 0 ;
+                  
+                  oboInOwl:hasDbXref "BFO_0000051"^^xsd:string ;
+                  
+                  oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                  
+                  oboInOwl:id "has_part"^^xsd:string ;
+                  
+                  oboInOwl:shorthand "has_part"^^xsd:string ;
+                  
+                  obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/chebi#has_functional_parent
+
+chebi:has_functional_parent rdf:type owl:ObjectProperty ;
+                            
+                            rdfs:label "has functional parent"^^xsd:string ;
+                            
+                            oboInOwl:is_cyclic 0 ;
+                            
+                            oboInOwl:is_transitive 0 ;
+                            
+                            oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                            
+                            oboInOwl:id "has_functional_parent"^^xsd:string ;
+                            
+                            obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/chebi#is_conjugate_acid_of
+
+chebi:is_conjugate_acid_of rdf:type owl:ObjectProperty ;
+                           
+                           rdfs:label "is conjugate acid of"^^xsd:string ;
+                           
+                           oboInOwl:is_transitive 0 ;
+                           
+                           oboInOwl:is_cyclic 1 ;
+                           
+                           oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                           
+                           oboInOwl:id "is_conjugate_acid_of"^^xsd:string ;
+                           
+                           obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/chebi#is_conjugate_base_of
+
+chebi:is_conjugate_base_of rdf:type owl:ObjectProperty ;
+                           
+                           rdfs:label "is conjugate base of"^^xsd:string ;
+                           
+                           oboInOwl:is_transitive 0 ;
+                           
+                           oboInOwl:is_cyclic 1 ;
+                           
+                           oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                           
+                           oboInOwl:id "is_conjugate_base_of"^^xsd:string ;
+                           
+                           obo:IAO_0000412 obo:chebi.owl .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000040
+
+obo:BFO_0000040 rdf:type owl:Class .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_10545
+
+obo:CHEBI_10545 rdf:type owl:Class ;
+                
+                rdfs:label "electron"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_36338 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:10545"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "CiteXplore:21614077"^^xsd:string ;
+                
+                obo:IAO_0000115 "Elementary particle not affected by the strong force having a spin 1/2, a negative elementary charge and a rest mass of 0.000548579903(13) u, or 0.51099906(15) MeV."^^xsd:string ;
+                
+                oboInOwl:hasDbXref "KEGG COMPOUND:C05359"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "[*-]"^^xsd:string ,
+                                           "beta"^^xsd:string ,
+                                           "beta(-)"^^xsd:string ,
+                                           "beta-particle"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "e"^^xsd:string ,
+                                           "e(-)"^^xsd:string ,
+                                           "e-"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "electron"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "negatron"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_16134
+
+obo:CHEBI_16134 rdf:type owl:Class ;
+                
+                rdfs:label "ammonia"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_35107 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty chebi:is_conjugate_base_of ;
+                                  owl:someValuesFrom obo:CHEBI_28938
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0000087 ;
+                                  owl:someValuesFrom obo:CHEBI_78433
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0000087 ;
+                                  owl:someValuesFrom obo:CHEBI_77941
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty chebi:is_conjugate_acid_of ;
+                                  owl:someValuesFrom obo:CHEBI_29337
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0000087 ;
+                                  owl:someValuesFrom obo:CHEBI_59740
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0000087 ;
+                                  owl:someValuesFrom obo:CHEBI_25212
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0000087 ;
+                                  owl:someValuesFrom obo:CHEBI_50910
+                                ] ;
+                
+                oboInOwl:hasRelatedSynonym "AMINO SUBSTITUTION GROUP"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "AMMONIA"^^xsd:string ,
+                                         "Ammonia"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "Ammoniak"^^xsd:string ;
+                
+                obo:IAO_0000115 "An azane that consists of a single nitrogen atom covelently bonded to three hydrogen atoms."^^xsd:string ;
+                
+                oboInOwl:hasDbXref "Beilstein:3587154"^^xsd:string ;
+                
+                oboInOwl:hasAlternativeId "CHEBI:13405"^^xsd:string ,
+                                          "CHEBI:13406"^^xsd:string ,
+                                          "CHEBI:13407"^^xsd:string ,
+                                          "CHEBI:13771"^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:16134"^^xsd:string ;
+                
+                oboInOwl:hasAlternativeId "CHEBI:22533"^^xsd:string ,
+                                          "CHEBI:44269"^^xsd:string ,
+                                          "CHEBI:44284"^^xsd:string ,
+                                          "CHEBI:44404"^^xsd:string ,
+                                          "CHEBI:7434"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "ChemIDplus:7664-41-7"^^xsd:string ,
+                                   "CiteXplore:110589"^^xsd:string ,
+                                   "CiteXplore:11139349"^^xsd:string ,
+                                   "CiteXplore:11540049"^^xsd:string ,
+                                   "CiteXplore:11746427"^^xsd:string ,
+                                   "CiteXplore:11783653"^^xsd:string ,
+                                   "CiteXplore:13753780"^^xsd:string ,
+                                   "CiteXplore:14663195"^^xsd:string ,
+                                   "CiteXplore:15092448"^^xsd:string ,
+                                   "CiteXplore:15094021"^^xsd:string ,
+                                   "CiteXplore:15554424"^^xsd:string ,
+                                   "CiteXplore:15969015"^^xsd:string ,
+                                   "CiteXplore:16008360"^^xsd:string ,
+                                   "CiteXplore:16050680"^^xsd:string ,
+                                   "CiteXplore:16348008"^^xsd:string ,
+                                   "CiteXplore:16349403"^^xsd:string ,
+                                   "CiteXplore:16614889"^^xsd:string ,
+                                   "CiteXplore:16664306"^^xsd:string ,
+                                   "CiteXplore:16842901"^^xsd:string ,
+                                   "CiteXplore:17025297"^^xsd:string ,
+                                   "CiteXplore:17439666"^^xsd:string ,
+                                   "CiteXplore:17569513"^^xsd:string ,
+                                   "CiteXplore:17737668"^^xsd:string ,
+                                   "CiteXplore:18670398"^^xsd:string ,
+                                   "CiteXplore:22002069"^^xsd:string ,
+                                   "CiteXplore:22081570"^^xsd:string ,
+                                   "CiteXplore:22088435"^^xsd:string ,
+                                   "CiteXplore:22100291"^^xsd:string ,
+                                   "CiteXplore:22130175"^^xsd:string ,
+                                   "CiteXplore:22150211"^^xsd:string ,
+                                   "CiteXplore:22240068"^^xsd:string ,
+                                   "CiteXplore:22290316"^^xsd:string ,
+                                   "CiteXplore:22342082"^^xsd:string ,
+                                   "CiteXplore:22385337"^^xsd:string ,
+                                   "CiteXplore:22443779"^^xsd:string ,
+                                   "CiteXplore:22560242"^^xsd:string ,
+                                   "Gmelin:79"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "H3N"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "HMDB:HMDB00051"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "InChI=1S/H3N/h1H3"^^xsd:string ,
+                                           "InChIKey=QGZKDVFQNNGYKY-UHFFFAOYSA-N"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "KEGG COMPOUND:7664-41-7"^^xsd:string ,
+                                   "KEGG COMPOUND:C00014"^^xsd:string ,
+                                   "KEGG DRUG:D02916"^^xsd:string ,
+                                   "KNApSAcK:C00007267"^^xsd:string ,
+                                   "MetaCyc:AMMONIA"^^xsd:string ,
+                                   "MolBase:930"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "NH3"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "NIST Chemistry WebBook:7664-41-7"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "NITROGEN"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "PDBeChem:NH3"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "R-717"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "Reaxys:3587154"^^xsd:string ,
+                                   "Wikipedia:Ammonia"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "[H]N([H])[H]"^^xsd:string ,
+                                           "[NH3]"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "ammonia"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "ammoniac"^^xsd:string ,
+                                           "amoniaco"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "azane"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "spirit of hartshorn"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_16301
+
+obo:CHEBI_16301 rdf:type owl:Class ;
+                
+                rdfs:label "nitrite"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_23367 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty chebi:is_conjugate_base_of ;
+                                  owl:someValuesFrom obo:CHEBI_25567
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0000087 ;
+                                  owl:someValuesFrom obo:CHEBI_77746
+                                ] ;
+                
+                oboInOwl:hasAlternativeId "CHEBI:14658"^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:16301"^^xsd:string ;
+                
+                oboInOwl:hasAlternativeId "CHEBI:44396"^^xsd:string ,
+                                          "CHEBI:7585"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "ChemIDplus:14797-65-0"^^xsd:string ,
+                                   "Gmelin:977"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "InChI=1S/HNO2/c2-1-3/h(H,2,3)/p-1"^^xsd:string ,
+                                           "InChIKey=IOVCWXUNBOPUCH-UHFFFAOYSA-M"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "KEGG COMPOUND:C00088"^^xsd:string ,
+                                   "NIST Chemistry WebBook:14797-65-0"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "NITRITE ION"^^xsd:string ,
+                                           "NO2"^^xsd:string ,
+                                           "NO2(-)"^^xsd:string ,
+                                           "Nitrit"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "Nitrite"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "PDBeChem:NO2"^^xsd:string ;
+                
+                obo:IAO_0000115 "The nitrogen oxoanion formed by loss of a proton from nitrous acid."^^xsd:string ;
+                
+                oboInOwl:hasDbXref "Wikipedia:Nitrite"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "[NO2](-)"^^xsd:string ,
+                                           "[O-]N=O"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "dioxidonitrate(1-)"^^xsd:string ,
+                                         "dioxonitrate(1-)"^^xsd:string ,
+                                         "dioxonitrate(III)"^^xsd:string ,
+                                         "nitrite"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "nitrite anion"^^xsd:string ,
+                                           "nitrite(1-)"^^xsd:string ,
+                                           "nitrous acid, ion(1-)"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_17632
+
+obo:CHEBI_17632 rdf:type owl:Class ;
+                
+                rdfs:label "nitrate"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_23367 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty chebi:is_conjugate_base_of ;
+                                  owl:someValuesFrom obo:CHEBI_48107
+                                ] ;
+                
+                obo:IAO_0000115 "A nitrogen oxoanion formed by loss of a proton from nitric acid. Principal species present at pH 7.3."^^xsd:string ;
+                
+                oboInOwl:hasDbXref "Beilstein:3587575"^^xsd:string ;
+                
+                oboInOwl:hasAlternativeId "CHEBI:14654"^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:17632"^^xsd:string ;
+                
+                oboInOwl:hasAlternativeId "CHEBI:44487"^^xsd:string ,
+                                          "CHEBI:71263"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "ChemIDplus:14797-55-8"^^xsd:string ,
+                                   "Gmelin:1574"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "InChI=1S/NO3/c2-1(3)4/q-1"^^xsd:string ,
+                                           "InChIKey=NHNBFGGVMKEFGY-UHFFFAOYSA-N"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "NIST Chemistry WebBook:14797-55-8"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "NITRATE ION"^^xsd:string ,
+                                           "NO3"^^xsd:string ,
+                                           "NO3(-)"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "PDBeChem:NO3"^^xsd:string ,
+                                   "SUBMITTER:NITRATE"^^xsd:string ,
+                                   "Wikipedia:Nitrate"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "[NO3](-)"^^xsd:string ,
+                                           "[O-][N+]([O-])=O"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "nitrate"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "nitrate(1-)"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "trioxidonitrate(1-)"^^xsd:string ,
+                                         "trioxonitrate(1-)"^^xsd:string ,
+                                         "trioxonitrate(V)"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_17891
+
+obo:CHEBI_17891 rdf:type owl:Class ;
+                
+                rdfs:label "donor"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_51086 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                obo:IAO_0000115 "A molecular entity that can transfer (\"donate\") an electron, a pair of electrons, an atom or a group to another molecular entity."^^xsd:string ;
+                
+                oboInOwl:hasAlternativeId "CHEBI:14202"^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:17891"^^xsd:string ;
+                
+                oboInOwl:hasAlternativeId "CHEBI:4697"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "Donator"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "Donor"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "KEGG COMPOUND:C01351"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "donneur"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "donor"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_22563
+
+obo:CHEBI_22563 rdf:type owl:Class ;
+                
+                rdfs:label "anion"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_24870 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                obo:IAO_0000115 "A monoatomic or polyatomic species having one or more elementary charges of the electron."^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "Anion"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "Anionen"^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:22563"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "anion"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "aniones"^^xsd:string ,
+                                           "anions"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_22695
+
+obo:CHEBI_22695 rdf:type owl:Class ;
+                
+                rdfs:label "base"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_51086 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                obo:IAO_0000115 "A molecular entity having an available pair of electrons capable of forming a covalent bond with a hydron (Bronsted base) or with the vacant orbital of some other molecular entity (Lewis base)."^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "Base"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "Base1"^^xsd:string ,
+                                           "Base2"^^xsd:string ,
+                                           "Basen"^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:22695"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "KEGG COMPOUND:C00701"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "Nucleobase"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "base"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "bases"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_23367
+
+obo:CHEBI_23367 rdf:type owl:Class ;
+                
+                rdfs:label "molecular entity"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_24431 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                obo:IAO_0000115 "Any constitutionally or isotopically distinct atom, molecule, ion, ion pair, radical, radical ion, complex, conformer etc., identifiable as a separately distinguishable entity."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:23367"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "entidad molecular"^^xsd:string ,
+                                           "entidades moleculares"^^xsd:string ,
+                                           "entite moleculaire"^^xsd:string ,
+                                           "molecular entities"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "molecular entity"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "molekulare Entitaet"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_23924
+
+obo:CHEBI_23924 rdf:type owl:Class ;
+                
+                rdfs:label "enzyme inhibitor"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_35222 ,
+                                obo:CHEBI_52206 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                obo:IAO_0000115 "A compound or agent that combines with an enzyme in such a manner as to prevent the normal substrate-enzyme combination and the catalytic reaction."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:23924"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "enzyme inhibitor"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "enzyme inhibitors"^^xsd:string ,
+                                           "inhibidor enzimatico"^^xsd:string ,
+                                           "inhibidores enzimaticos"^^xsd:string ,
+                                           "inhibiteur enzymatique"^^xsd:string ,
+                                           "inhibiteurs enzymatiques"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_24431
+
+obo:CHEBI_24431 rdf:type owl:Class ;
+                
+                rdfs:label "chemical entity"^^xsd:string ;
+                
+                rdfs:subClassOf obo:BFO_0000040 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                obo:IAO_0000115 "A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:24431"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "grouped_by_chemistry"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_24432
+
+obo:CHEBI_24432 rdf:type owl:Class ;
+                
+                rdfs:label "biological role"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_50906 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                obo:IAO_0000115 "A role played by the molecular entity or part thereof within a biological context."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:24432"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "biological function"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "grouped_by_functions"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_24433
+
+obo:CHEBI_24433 rdf:type owl:Class ;
+                
+                rdfs:label "group"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_24431 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty chebi:BFO_0000051 ;
+                                  owl:someValuesFrom obo:CHEBI_33250
+                                ] ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                obo:IAO_0000115 "A defined linked collection of atoms or a single atom within a molecular entity."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:24433"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "Gruppe"^^xsd:string ,
+                                           "Rest"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "group"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "groupe"^^xsd:string ,
+                                           "grupo"^^xsd:string ,
+                                           "grupos"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_24651
+
+obo:CHEBI_24651 rdf:type owl:Class ;
+                
+                rdfs:label "hydroxides"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_25806 ,
+                                obo:CHEBI_33608 ,
+                                obo:CHEBI_37577 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty chebi:BFO_0000051 ;
+                                  owl:someValuesFrom obo:CHEBI_43176
+                                ] ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:24651"^^xsd:string ;
+                
+                obo:IAO_0000115 "Hydroxides are chemical compounds containing a hydroxy group or salts containing hydroxide (OH(-))."^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "hydroxides"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_24833
+
+obo:CHEBI_24833 rdf:type owl:Class ;
+                
+                rdfs:label "oxoacid"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_24651 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0000087 ;
+                                  owl:someValuesFrom obo:CHEBI_39141
+                                ] ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                obo:IAO_0000115 "A compound which contains oxygen, at least one other element, and at least one hydrogen bound to oxygen, and which produces a conjugate base by loss of positive hydrogen ion(s) (hydrons)."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:24833"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "inorganic acids"^^xsd:string ,
+                                           "oxacids"^^xsd:string ,
+                                           "oxiacids"^^xsd:string ,
+                                           "oxo acid"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "oxoacid"^^xsd:string ,
+                                         "oxoacids"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "oxy-acids"^^xsd:string ,
+                                           "oxyacids"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_24834
+
+obo:CHEBI_24834 rdf:type owl:Class ;
+                
+                rdfs:label "inorganic anion"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_22563 ,
+                                obo:CHEBI_36914 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:24834"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "inorganic anions"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_24835
+
+obo:CHEBI_24835 rdf:type owl:Class ;
+                
+                rdfs:label "inorganic molecular entity"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_23367 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                obo:IAO_0000115 "A molecular entity that contains no carbon."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:24835"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "anorganische Verbindungen"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "inorganic compounds"^^xsd:string ,
+                                           "inorganic entity"^^xsd:string ,
+                                           "inorganic molecular entities"^^xsd:string ,
+                                           "inorganics"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_24870
+
+obo:CHEBI_24870 rdf:type owl:Class ;
+                
+                rdfs:label "ion"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_23367 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                obo:IAO_0000115 "A molecular entity having a net electric charge."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:24870"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "Ion"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "Ionen"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "ion"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "iones"^^xsd:string ,
+                                           "ions"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_25212
+
+obo:CHEBI_25212 rdf:type owl:Class ;
+                
+                rdfs:label "metabolite"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_52206 ;
+                
+                obo:IAO_0000115 "Any intermediate or product resulting from metabolism. The term 'metabolite' subsumes the classes commonly known as primary and secondary metabolites."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:25212"^^xsd:string ;
+                
+                oboInOwl:hasAlternativeId "CHEBI:26619"^^xsd:string ,
+                                          "CHEBI:35220"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "metabolite"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "metabolites"^^xsd:string ,
+                                           "primary metabolites"^^xsd:string ,
+                                           "secondary metabolites"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_25549
+
+obo:CHEBI_25549 rdf:type owl:Class ;
+                
+                rdfs:label "nitrites"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_23367 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty chebi:has_functional_parent ;
+                                  owl:someValuesFrom obo:CHEBI_25567
+                                ] ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:25549"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_25555
+
+obo:CHEBI_25555 rdf:type owl:Class ;
+                
+                rdfs:label "nitrogen atom"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_33250 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0000087 ;
+                                  owl:someValuesFrom obo:CHEBI_33937
+                                ] ;
+                
+                oboInOwl:hasRelatedSynonym "7N"^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:25555"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "N"^^xsd:string ,
+                                           "Stickstoff"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "WebElements:N"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "azote"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "nitrogen"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "nitrogen"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "nitrogeno"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_25567
+
+obo:CHEBI_25567 rdf:type owl:Class ;
+                
+                rdfs:label "nitrous acid"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_33455 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty chebi:is_conjugate_acid_of ;
+                                  owl:someValuesFrom obo:CHEBI_16301
+                                ] ;
+                
+                obo:IAO_0000115 "A nitrogen oxoacid that has formula HNO2."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:25567"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "ChemIDplus:7782-77-6"^^xsd:string ,
+                                   "Gmelin:983"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "HNO2"^^xsd:string ,
+                                           "InChI=1S/HNO2/c2-1-3/h(H,2,3)"^^xsd:string ,
+                                           "InChIKey=IOVCWXUNBOPUCH-UHFFFAOYSA-N"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "KEGG COMPOUND:C00088"^^xsd:string ,
+                                   "NIST Chemistry WebBook:7782-77-6"^^xsd:string ,
+                                   "PDBeChem:NO2"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "[H]ON=O"^^xsd:string ,
+                                           "[NO(OH)]"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "dioxonitric acid"^^xsd:string ,
+                                         "hydrogen dioxonitrate(1-)"^^xsd:string ,
+                                         "hydroxidooxidonitrogen"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "nitrosyl hydroxide"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "nitrous acid"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_25585
+
+obo:CHEBI_25585 rdf:type owl:Class ;
+                
+                rdfs:label "nonmetal atom"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_33250 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:25585"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "Nichtmetall"^^xsd:string ,
+                                           "Nichtmetalle"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "no metal"^^xsd:string ,
+                                           "no metales"^^xsd:string ,
+                                           "non-metal"^^xsd:string ,
+                                           "non-metaux"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "nonmetal"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "nonmetal"^^xsd:string ,
+                                           "nonmetals"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_25805
+
+obo:CHEBI_25805 rdf:type owl:Class ;
+                
+                rdfs:label "oxygen atom"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_25585 ,
+                                obo:CHEBI_33303 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0000087 ;
+                                  owl:someValuesFrom obo:CHEBI_33937
+                                ] ;
+                
+                oboInOwl:hasRelatedSynonym "8O"^^xsd:string ;
+                
+                obo:IAO_0000115 "A chalcogen that has formula O."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:25805"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "ChEBI:C00007"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "InChI=1S/O"^^xsd:string ,
+                                           "InChIKey=QVGXLLKOCUKJST-UHFFFAOYSA-N"^^xsd:string ,
+                                           "O"^^xsd:string ,
+                                           "Sauerstoff"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "WebElements:O"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "[O]"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "oxigeno"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "oxygen"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "oxygen"^^xsd:string ,
+                                           "oxygene"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_25806
+
+obo:CHEBI_25806 rdf:type owl:Class ;
+                
+                rdfs:label "oxygen molecular entity"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_33304 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty chebi:BFO_0000051 ;
+                                  owl:someValuesFrom obo:CHEBI_25805
+                                ] ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:25806"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "oxygen compounds"^^xsd:string ,
+                                           "oxygen molecular entities"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "oxygen molecular entity"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_28938
+
+obo:CHEBI_28938 rdf:type owl:Class ;
+                
+                rdfs:label "ammonium"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_35106 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0000087 ;
+                                  owl:someValuesFrom obo:CHEBI_77746
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty chebi:is_conjugate_acid_of ;
+                                  owl:someValuesFrom obo:CHEBI_16134
+                                ] ;
+                
+                oboInOwl:hasRelatedSynonym "AMMONIUM ION"^^xsd:string ,
+                                           "Ammonium(1+)"^^xsd:string ;
+                
+                obo:IAO_0000115 "An onium cation obtained by protonation of ammonia."^^xsd:string ;
+                
+                oboInOwl:hasAlternativeId "CHEBI:22534"^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:28938"^^xsd:string ;
+                
+                oboInOwl:hasAlternativeId "CHEBI:49783"^^xsd:string ,
+                                          "CHEBI:7435"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "ChemIDplus:14798-03-9"^^xsd:string ,
+                                   "CiteXplore:11319011"^^xsd:string ,
+                                   "CiteXplore:11341317"^^xsd:string ,
+                                   "CiteXplore:12096804"^^xsd:string ,
+                                   "CiteXplore:14512268"^^xsd:string ,
+                                   "CiteXplore:14879753"^^xsd:string ,
+                                   "CiteXplore:16345391"^^xsd:string ,
+                                   "CiteXplore:16903292"^^xsd:string ,
+                                   "CiteXplore:17392693"^^xsd:string ,
+                                   "CiteXplore:18515490"^^xsd:string ,
+                                   "CiteXplore:19199063"^^xsd:string ,
+                                   "CiteXplore:19596600"^^xsd:string ,
+                                   "CiteXplore:19682559"^^xsd:string ,
+                                   "CiteXplore:19716251"^^xsd:string ,
+                                   "CiteXplore:21993530"^^xsd:string ,
+                                   "CiteXplore:22265469"^^xsd:string ,
+                                   "CiteXplore:22524020"^^xsd:string ,
+                                   "CiteXplore:22562341"^^xsd:string ,
+                                   "CiteXplore:22631217"^^xsd:string ,
+                                   "Gmelin:84"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "H4N"^^xsd:string ,
+                                           "InChI=1S/H3N/h1H3/p+1"^^xsd:string ,
+                                           "InChIKey=QGZKDVFQNNGYKY-UHFFFAOYSA-O"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "KEGG COMPOUND:C01342"^^xsd:string ,
+                                   "MetaCyc:AMMONIUM"^^xsd:string ,
+                                   "MolBase:929"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "NH4(+)"^^xsd:string ,
+                                           "NH4+"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "NIST Chemistry WebBook:14798-03-9"^^xsd:string ,
+                                   "PDBeChem:NH4"^^xsd:string ,
+                                   "Reaxys:16093784"^^xsd:string ,
+                                   "Wikipedia:Ammonium"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "[H][N+]([H])([H])[H]"^^xsd:string ,
+                                           "[NH4](+)"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "ammonium"^^xsd:string ,
+                                         "azanium"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_29337
+
+obo:CHEBI_29337 rdf:type owl:Class ;
+                
+                rdfs:label "azanide"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_35106 ,
+                                obo:CHEBI_79389 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty chebi:is_conjugate_base_of ;
+                                  owl:someValuesFrom obo:CHEBI_16134
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty chebi:is_conjugate_acid_of ;
+                                  owl:someValuesFrom obo:CHEBI_29340
+                                ] ;
+                
+                obo:IAO_0000115 "A nitrogen hydride that has formula H2N."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:29337"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "H2N"^^xsd:string ,
+                                           "InChI=1S/H2N/h1H2/q-1"^^xsd:string ,
+                                           "InChIKey=HYGWNUKOUCZBND-UHFFFAOYSA-N"^^xsd:string ,
+                                           "NH2(-)"^^xsd:string ,
+                                           "[H][N-][H]"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "amide"^^xsd:string ,
+                                         "azanide"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "dihydridonitrate(1-)"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_29340
+
+obo:CHEBI_29340 rdf:type owl:Class ;
+                
+                rdfs:label "hydridonitrate(2-)"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_35106 ,
+                                obo:CHEBI_79388 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty chebi:is_conjugate_base_of ;
+                                  owl:someValuesFrom obo:CHEBI_29337
+                                ] ;
+                
+                obo:IAO_0000115 "A divalent inorganic anion resulting from the removal of two protons from ammonia."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:29340"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "HN"^^xsd:string ,
+                                           "InChI=1S/HN/h1H/q-2"^^xsd:string ,
+                                           "InChIKey=DZQYTNGKSBCIOE-UHFFFAOYSA-N"^^xsd:string ,
+                                           "NH(2-)"^^xsd:string ,
+                                           "[N--][H]"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "azanediide"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "hydridonitrate(2-)"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "imide"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_29351
+
+obo:CHEBI_29351 rdf:type owl:Class ;
+                
+                rdfs:label "nitrogen(.)"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_33267 ;
+                
+                obo:IAO_0000115 "A monoatomic nitrogen that has formula N."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:29351"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "ChemIDplus:17778-88-0"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "InChI=1S/N"^^xsd:string ,
+                                           "InChIKey=QJGQUHMNIGDVPM-UHFFFAOYSA-N"^^xsd:string ,
+                                           "N"^^xsd:string ,
+                                           "N(.)"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "NIST Chemistry WebBook:17778-88-0"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "[N]"^^xsd:string ,
+                                           "atomic nitrogen"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "mononitrogen"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "nitrogen atom"^^xsd:string ,
+                                           "nitrogen radical"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "nitrogen(.)"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33232
+
+obo:CHEBI_33232 rdf:type owl:Class ;
+                
+                rdfs:label "application"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_50906 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:33232"^^xsd:string ;
+                
+                obo:IAO_0000115 "Intended use of the molecular entity or part thereof by humans."^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33233
+
+obo:CHEBI_33233 rdf:type owl:Class ;
+                
+                rdfs:label "fundamental particle"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_36342 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                obo:IAO_0000115 "A particle not known to have substructure."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:33233"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "elementary particle"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "elementary particles"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33242
+
+obo:CHEBI_33242 rdf:type owl:Class ;
+                
+                rdfs:label "inorganic hydride"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_24835 ,
+                                obo:CHEBI_33692 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:33242"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "inorganic hydrides"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33246
+
+obo:CHEBI_33246 rdf:type owl:Class ;
+                
+                rdfs:label "inorganic group"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_24433 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                obo:IAO_0000115 "Any substituent group which does not contain carbon."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:33246"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "inorganic groups"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33250
+
+obo:CHEBI_33250 rdf:type owl:Class ;
+                
+                rdfs:label "atom"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_24431 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty chebi:BFO_0000051 ;
+                                  owl:someValuesFrom obo:CHEBI_10545
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty chebi:BFO_0000051 ;
+                                  owl:someValuesFrom obo:CHEBI_33252
+                                ] ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                obo:IAO_0000115 "A chemical entity constituting the smallest component of an element having the chemical properties of the element."^^xsd:string ;
+                
+                oboInOwl:hasAlternativeId "CHEBI:22671"^^xsd:string ,
+                                          "CHEBI:23907"^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:33250"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "atom"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "atome"^^xsd:string ,
+                                           "atomo"^^xsd:string ,
+                                           "atoms"^^xsd:string ,
+                                           "atomus"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "element"^^xsd:string ,
+                                           "elements"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33252
+
+obo:CHEBI_33252 rdf:type owl:Class ;
+                
+                rdfs:label "atomic nucleus"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_36347 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty chebi:BFO_0000051 ;
+                                  owl:someValuesFrom obo:CHEBI_33253
+                                ] ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                obo:IAO_0000115 "A nucleus is the positively charged central portion of an atom, excluding the orbital electrons."^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "Atomkern"^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:33252"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "Kern"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "noyau"^^xsd:string ,
+                                           "noyau atomique"^^xsd:string ,
+                                           "nuclei"^^xsd:string ,
+                                           "nucleo"^^xsd:string ,
+                                           "nucleo atomico"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "nucleus"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "nucleus atomi"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33253
+
+obo:CHEBI_33253 rdf:type owl:Class ;
+                
+                rdfs:label "nucleon"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_36339 ,
+                                obo:CHEBI_36347 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:33253"^^xsd:string ;
+                
+                obo:IAO_0000115 "Heavy nuclear particle: proton or neutron."^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "Nukleon"^^xsd:string ,
+                                           "Nukleonen"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "nucleon"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "nucleons"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33267
+
+obo:CHEBI_33267 rdf:type owl:Class ;
+                
+                rdfs:label "elemental nitrogen"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_23367 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:33267"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33284
+
+obo:CHEBI_33284 rdf:type owl:Class ;
+                
+                rdfs:label "nutrient"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_78295 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                obo:IAO_0000115 "A nutrient is a chemical element needed by all life forms."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:33284"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "nutrients"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33286
+
+obo:CHEBI_33286 rdf:type owl:Class ;
+                
+                rdfs:label "agrochemical"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_33232 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                obo:IAO_0000115 "An agrochemical is a substance that is used in agriculture or horticulture."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:33286"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "Wikipedia:Agrochemical"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "agrichemical"^^xsd:string ,
+                                           "agrichemicals"^^xsd:string ,
+                                           "agricultural chemicals"^^xsd:string ,
+                                           "agrochemicals"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33287
+
+obo:CHEBI_33287 rdf:type owl:Class ;
+                
+                rdfs:label "fertilizer"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_33286 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                obo:IAO_0000115 "A fertilizer is any substance that is added to soil or water to assist the growth of plants."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:33287"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "fertiliser"^^xsd:string ,
+                                           "fertilizers"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33300
+
+obo:CHEBI_33300 rdf:type owl:Class ;
+                
+                rdfs:label "pnictogen"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_33250 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                obo:IAO_0000115 "Any p-block element atom that is in group 15 of the periodic table: nitrogen, phosphorus, arsenic, antimony and bismuth."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:33300"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "group 15 elements"^^xsd:string ,
+                                           "group V elements"^^xsd:string ,
+                                           "nitrogenoideos"^^xsd:string ,
+                                           "nitrogenoides"^^xsd:string ,
+                                           "pnictogene"^^xsd:string ,
+                                           "pnictogenes"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "pnictogens"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33302
+
+obo:CHEBI_33302 rdf:type owl:Class ;
+                
+                rdfs:label "pnictogen molecular entity"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_33675 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty chebi:BFO_0000051 ;
+                                  owl:someValuesFrom obo:CHEBI_33300
+                                ] ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                obo:IAO_0000115 "A p-block molecular entity containing any pnictogen."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:33302"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "pnictogen molecular entities"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "pnictogen molecular entity"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33303
+
+obo:CHEBI_33303 rdf:type owl:Class ;
+                
+                rdfs:label "chalcogen"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_33560 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                obo:IAO_0000115 "Any p-block element belonging to the group 16 family of the periodic table."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:33303"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "Chalkogen"^^xsd:string ,
+                                           "Chalkogene"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "CiteXplore:17084588"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "anfigeno"^^xsd:string ,
+                                           "anfigenos"^^xsd:string ,
+                                           "calcogeno"^^xsd:string ,
+                                           "calcogenos"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "chalcogen"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "chalcogene"^^xsd:string ,
+                                           "chalcogenes"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "chalcogens"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "group 16 elements"^^xsd:string ,
+                                           "group VI elements"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33304
+
+obo:CHEBI_33304 rdf:type owl:Class ;
+                
+                rdfs:label "chalcogen molecular entity"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_33675 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty chebi:BFO_0000051 ;
+                                  owl:someValuesFrom obo:CHEBI_33303
+                                ] ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                obo:IAO_0000115 "Any p-block molecular entity containing a chalcogen."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:33304"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "chalcogen compounds"^^xsd:string ,
+                                           "chalcogen molecular entities"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "chalcogen molecular entity"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33318
+
+obo:CHEBI_33318 rdf:type owl:Class ;
+                
+                rdfs:label "main group element atom"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_33250 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                obo:IAO_0000115 "An atom belonging to one of the main groups (found in the s- and p- blocks) of the periodic table."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:33318"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "Hauptgruppenelement"^^xsd:string ,
+                                           "Hauptgruppenelemente"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "main group element"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "main group elements"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33408
+
+obo:CHEBI_33408 rdf:type owl:Class ;
+                
+                rdfs:label "pnictogen oxoacid"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_24833 ,
+                                obo:CHEBI_33302 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:33408"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "pnictogen oxoacids"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33455
+
+obo:CHEBI_33455 rdf:type owl:Class ;
+                
+                rdfs:label "nitrogen oxoacid"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_33408 ,
+                                obo:CHEBI_51143 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:33455"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "nitrogen oxoacids"^^xsd:string ,
+                                           "oxoacids of nitrogen"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33559
+
+obo:CHEBI_33559 rdf:type owl:Class ;
+                
+                rdfs:label "s-block element atom"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_33250 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:33559"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "s-block element"^^xsd:string ,
+                                           "s-block elements"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33560
+
+obo:CHEBI_33560 rdf:type owl:Class ;
+                
+                rdfs:label "p-block element atom"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_33318 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                obo:IAO_0000115 "Any main group element atom belonging to the p-block of the periodic table."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:33560"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "p-block element"^^xsd:string ,
+                                           "p-block elements"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33579
+
+obo:CHEBI_33579 rdf:type owl:Class ;
+                
+                rdfs:label "main group molecular entity"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_23367 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty chebi:BFO_0000051 ;
+                                  owl:someValuesFrom obo:CHEBI_33318
+                                ] ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                obo:IAO_0000115 "A molecular entity containing one or more atoms from any of groups 1, 2, 13, 14, 15, 16, 17, and 18 of the periodic table."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:33579"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "main group compounds"^^xsd:string ,
+                                           "main group molecular entities"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33608
+
+obo:CHEBI_33608 rdf:type owl:Class ;
+                
+                rdfs:label "hydrogen molecular entity"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_33674 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty chebi:BFO_0000051 ;
+                                  owl:someValuesFrom obo:CHEBI_49637
+                                ] ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:33608"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "hydrogen compounds"^^xsd:string ,
+                                           "hydrogen molecular entities"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33674
+
+obo:CHEBI_33674 rdf:type owl:Class ;
+                
+                rdfs:label "s-block molecular entity"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_33579 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty chebi:BFO_0000051 ;
+                                  owl:someValuesFrom obo:CHEBI_33559
+                                ] ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                obo:IAO_0000115 "An s-block molecular entity is a molecular entity containing one or more atoms of an s-block element."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:33674"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "s-block compounds"^^xsd:string ,
+                                           "s-block molecular entities"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "s-block molecular entity"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33675
+
+obo:CHEBI_33675 rdf:type owl:Class ;
+                
+                rdfs:label "p-block molecular entity"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_33579 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty chebi:BFO_0000051 ;
+                                  owl:someValuesFrom obo:CHEBI_33560
+                                ] ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                obo:IAO_0000115 "A p-block molecular entity is a molecular entity containing one or more atoms of a p-block element."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:33675"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "p-block compounds"^^xsd:string ,
+                                           "p-block molecular entities"^^xsd:string ,
+                                           "p-block molecular entitiy"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33692
+
+obo:CHEBI_33692 rdf:type owl:Class ;
+                
+                rdfs:label "hydrides"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_33608 ,
+                                obo:CHEBI_37577 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:33692"^^xsd:string ;
+                
+                obo:IAO_0000115 "Hydrides are chemical compounds of hydrogen with other chemical elements."^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33893
+
+obo:CHEBI_33893 rdf:type owl:Class ;
+                
+                rdfs:label "reagent"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_33232 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                obo:IAO_0000115 "A substance used in a chemical reaction to detect, measure, examine, or produce other substances."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:33893"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "reactif"^^xsd:string ,
+                                           "reactivo"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "reagent"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "reagents"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33937
+
+obo:CHEBI_33937 rdf:type owl:Class ;
+                
+                rdfs:label "macronutrient"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_33284 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:33937"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "macronutrients"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_35106
+
+obo:CHEBI_35106 rdf:type owl:Class ;
+                
+                rdfs:label "nitrogen hydride"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_35881 ,
+                                obo:CHEBI_51143 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:35106"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "nitrogen hydrides"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_35107
+
+obo:CHEBI_35107 rdf:type owl:Class ;
+                
+                rdfs:label "azane"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_35106 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:35107"^^xsd:string ;
+                
+                obo:IAO_0000115 "Saturated acyclic nitrogen hydrides having the general formula NnHn+2."^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "azanes"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_35222
+
+obo:CHEBI_35222 rdf:type owl:Class ;
+                
+                rdfs:label "inhibitor"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_51086 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                obo:IAO_0000115 "A substance that diminishes the rate of a chemical reaction."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:35222"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "inhibidor"^^xsd:string ,
+                                           "inhibiteur"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "inhibitor"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "inhibitors"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_35881
+
+obo:CHEBI_35881 rdf:type owl:Class ;
+                
+                rdfs:label "pnictogen hydride"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_33242 ,
+                                obo:CHEBI_33302 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:35881"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "pnictogen hydride"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "pnictogen hydrides"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_36338
+
+obo:CHEBI_36338 rdf:type owl:Class ;
+                
+                rdfs:label "lepton"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_33233 ,
+                                obo:CHEBI_36340 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:36338"^^xsd:string ;
+                
+                obo:IAO_0000115 "Lepton is a fermion that does not experience the strong force (strong interaction). The term is derived from the Greek lambdaepsilonpitauomicronsigma (small, thin)."^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "leptons"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_36339
+
+obo:CHEBI_36339 rdf:type owl:Class ;
+                
+                rdfs:label "baryon"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_36340 ,
+                                obo:CHEBI_36344 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                obo:IAO_0000115 "Baryon is a fermion that does experience the strong force (strong interaction). The term is derived from the Greek betaalpharhoupsilonsigma (heavy)."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:36339"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "baryons"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_36340
+
+obo:CHEBI_36340 rdf:type owl:Class ;
+                
+                rdfs:label "fermion"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_36342 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:36340"^^xsd:string ;
+                
+                obo:IAO_0000115 "Particle of half-integer spin quantum number following Fermi-Dirac statistics. Fermions are named after Enrico Fermi."^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "fermion"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "fermions"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_36342
+
+obo:CHEBI_36342 rdf:type owl:Class ;
+                
+                rdfs:label "subatomic particle"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                obo:IAO_0000115 "A particle smaller than an atom."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:36342"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "subatomic particles"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_36343
+
+obo:CHEBI_36343 rdf:type owl:Class ;
+                
+                rdfs:label "composite particle"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_36342 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                obo:IAO_0000115 "A subatomic particle known to have substructure (i.e. consisting of smaller particles)."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:36343"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "composite particles"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_36344
+
+obo:CHEBI_36344 rdf:type owl:Class ;
+                
+                rdfs:label "hadron"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_36343 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:36344"^^xsd:string ;
+                
+                obo:IAO_0000115 "Hadron is a subatomic particle which experiences the strong force."^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "hadrons"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_36347
+
+obo:CHEBI_36347 rdf:type owl:Class ;
+                
+                rdfs:label "nuclear particle"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_36342 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                obo:IAO_0000115 "A nucleus or any of its constituents in any of their energy states."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:36347"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "nuclear particle"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_36357
+
+obo:CHEBI_36357 rdf:type owl:Class ;
+                
+                rdfs:label "polyatomic entity"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_23367 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty chebi:BFO_0000051 ;
+                                  owl:someValuesFrom obo:CHEBI_24433
+                                ] ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                obo:IAO_0000115 "Any molecular entity consisting of more than one atom."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:36357"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "polyatomic entities"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_36914
+
+obo:CHEBI_36914 rdf:type owl:Class ;
+                
+                rdfs:label "inorganic ion"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_24835 ,
+                                obo:CHEBI_24870 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:36914"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "inorganic ions"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_37527
+
+obo:CHEBI_37527 rdf:type owl:Class ;
+                
+                rdfs:label "acid"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_51086 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "Acid"^^xsd:string ;
+                
+                obo:IAO_0000115 "An acid is a molecular entity capable of donating a hydron (Bronsted acid) or capable of forming a covalent bond with an electron pair (Lewis acid)."^^xsd:string ;
+                
+                oboInOwl:hasAlternativeId "CHEBI:13800"^^xsd:string ,
+                                          "CHEBI:13801"^^xsd:string ,
+                                          "CHEBI:22209"^^xsd:string ,
+                                          "CHEBI:2426"^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:37527"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "KEGG COMPOUND:C00174"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "Saeure"^^xsd:string ,
+                                           "Saeuren"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "acid"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "acide"^^xsd:string ,
+                                           "acido"^^xsd:string ,
+                                           "acids"^^xsd:string ,
+                                           "an acid"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_37577
+
+obo:CHEBI_37577 rdf:type owl:Class ;
+                
+                rdfs:label "heteroatomic molecular entity"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_36357 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                obo:IAO_0000115 "A molecular entity consisting of two or more chemical elements."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:37577"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "chemical compound"^^xsd:string ,
+                                           "heteroatomic molecular entities"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_39141
+
+obo:CHEBI_39141 rdf:type owl:Class ;
+                
+                rdfs:label "Bronsted acid"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_17891 ,
+                                obo:CHEBI_37527 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                obo:IAO_0000115 "A molecular entity capable of donating a hydron to an acceptor (Bronsted base)."^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "Bronsted acid"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "Bronsted-Saeure"^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:39141"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "acide de Bronsted"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "donneur d'hydron"^^xsd:string ,
+                                           "hydron donor"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_39144
+
+obo:CHEBI_39144 rdf:type owl:Class ;
+                
+                rdfs:label "Lewis base"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_17891 ,
+                                obo:CHEBI_22695 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                obo:IAO_0000115 "A molecular entity able to provide a pair of electrons and thus capable of forming a covalent bond with an electron-pair acceptor (Lewis acid), thereby producing a Lewis adduct."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:39144"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "Lewis base"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "Lewis-Base"^^xsd:string ,
+                                           "base de Lewis"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "donneur d'une paire d'electrons"^^xsd:string ,
+                                           "electron donor"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_43176
+
+obo:CHEBI_43176 rdf:type owl:Class ;
+                
+                rdfs:label "hydroxy group"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_33246 ;
+                
+                oboInOwl:hasRelatedSynonym "-OH"^^xsd:string ;
+                
+                oboInOwl:hasAlternativeId "CHEBI:24706"^^xsd:string ,
+                                          "CHEBI:43171"^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:43176"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "HO"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "HYDROXY GROUP"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "PDBeChem:HYD"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "hydroxide"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "hydroxy"^^xsd:string ,
+                                         "hydroxy group"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "hydroxyl"^^xsd:string ,
+                                           "hydroxyl group"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "oxidanyl"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_46787
+
+obo:CHEBI_46787 rdf:type owl:Class ;
+                
+                rdfs:label "solvent"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_33232 ,
+                                obo:CHEBI_51086 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                obo:IAO_0000115 "A liquid that can dissolve other substances (solutes) without any change in their chemical composition."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:46787"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "Loesungsmittel"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "Wikipedia:Solvent"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "solvant"^^xsd:string ,
+                                           "solvents"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_47704
+
+obo:CHEBI_47704 rdf:type owl:Class ;
+                
+                rdfs:label "ammonium salt"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_51143 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty chebi:BFO_0000051 ;
+                                  owl:someValuesFrom obo:CHEBI_28938
+                                ] ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ,
+                                           "Ammoniumsalz"^^xsd:string ,
+                                           "Ammoniumsalze"^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:47704"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "ammonium salt"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "ammonium salts"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_48107
+
+obo:CHEBI_48107 rdf:type owl:Class ;
+                
+                rdfs:label "nitric acid"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_33455 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty chebi:is_conjugate_acid_of ;
+                                  owl:someValuesFrom obo:CHEBI_17632
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0000087 ;
+                                  owl:someValuesFrom obo:CHEBI_48356
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0000087 ;
+                                  owl:someValuesFrom obo:CHEBI_33893
+                                ] ;
+                
+                obo:IAO_0000115 "A nitrogen oxoacid of formula HNO3 in which the nitrogen atom is bonded to a hydroxy group and by equivalent bonds to the remaining two oxygen atoms."^^xsd:string ;
+                
+                oboInOwl:hasAlternativeId "CHEBI:25545"^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:48107"^^xsd:string ;
+                
+                oboInOwl:hasAlternativeId "CHEBI:7580"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "ChemIDplus:7697-37-2"^^xsd:string ,
+                                   "CiteXplore:22285512"^^xsd:string ,
+                                   "CiteXplore:23402861"^^xsd:string ,
+                                   "Gmelin:1576"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "HNO3"^^xsd:string ,
+                                           "HONO2"^^xsd:string ,
+                                           "InChI=1S/HNO3/c2-1(3)4/h(H,2,3,4)"^^xsd:string ,
+                                           "InChIKey=GRYLNZFGIOXLOG-UHFFFAOYSA-N"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "KEGG COMPOUND:C00244"^^xsd:string ,
+                                   "KEGG DRUG:D02313"^^xsd:string ,
+                                   "MetaCyc:CPD-15028"^^xsd:string ,
+                                   "NIST Chemistry WebBook:7697-37-2"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "Nitrate"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "Nitric acid"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "O[N+]([O-])=O"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "Reaxys:3587310"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "Salpetersaeure"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "Wikipedia:Nitric_acid"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "[NO2(OH)]"^^xsd:string ,
+                                           "acide azotique"^^xsd:string ,
+                                           "acide nitrique"^^xsd:string ,
+                                           "azotic acid"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "hydrogen nitrate"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "hydrogen trioxonitrate(1-)"^^xsd:string ,
+                                         "hydroxidodioxidonitrogen"^^xsd:string ,
+                                         "trioxonitric acid"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_48354
+
+obo:CHEBI_48354 rdf:type owl:Class ;
+                
+                rdfs:label "polar solvent"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_46787 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                obo:IAO_0000115 "A solvent that is composed of polar molecules. Polar solvents can dissolve ionic compounds or ionisable covalent compounds."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:48354"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "polar solvent"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "polar solvents"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_48356
+
+obo:CHEBI_48356 rdf:type owl:Class ;
+                
+                rdfs:label "protic solvent"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_39141 ,
+                                obo:CHEBI_48354 ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                obo:IAO_0000115 "A polar solvent that is capable of acting as a hydron (proton) donor."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:48356"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "protogenic solvent"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_49637
+
+obo:CHEBI_49637 rdf:type owl:Class ;
+                
+                rdfs:label "hydrogen atom"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_24835 ,
+                                obo:CHEBI_25585 ,
+                                obo:CHEBI_33559 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0000087 ;
+                                  owl:someValuesFrom obo:CHEBI_33937
+                                ] ;
+                
+                oboInOwl:hasRelatedSynonym "1H"^^xsd:string ;
+                
+                obo:IAO_0000115 "A s-block element atom that has formula H."^^xsd:string ;
+                
+                oboInOwl:hasAlternativeId "CHEBI:24634"^^xsd:string ,
+                                          "CHEBI:49636"^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:49637"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "ETNAM H HYDROGEN ATOM"^^xsd:string ,
+                                           "H"^^xsd:string ,
+                                           "InChI=1S/H"^^xsd:string ,
+                                           "InChIKey=YZCKVEUIGOORGS-UHFFFAOYSA-N"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "PDBeChem:H"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "Wasserstoff"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "WebElements:H"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "[H]"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "hidrogeno"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "hydrogen"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "hydrogen"^^xsd:string ,
+                                           "hydrogene"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_50906
+
+obo:CHEBI_50906 rdf:type owl:Class ;
+                
+                rdfs:label "role"^^xsd:string ;
+                
+                obo:IAO_0000115 "A role is particular behaviour which a material entity may exhibit."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:50906"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_50910
+
+obo:CHEBI_50910 rdf:type owl:Class ;
+                
+                rdfs:label "neurotoxin"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_52209 ,
+                                obo:CHEBI_64909 ;
+                
+                obo:IAO_0000115 "A poison that interferes with the functions of the nervous system."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:50910"^^xsd:string ;
+                
+                oboInOwl:hasAlternativeId "CHEBI:50911"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "Wikipedia:Neurotoxin"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "agente neurotoxico"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "nerve poison"^^xsd:string ,
+                                           "nerve poisons"^^xsd:string ,
+                                           "neurotoxic agent"^^xsd:string ,
+                                           "neurotoxic agents"^^xsd:string ,
+                                           "neurotoxicant"^^xsd:string ,
+                                           "neurotoxins"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_51081
+
+obo:CHEBI_51081 rdf:type owl:Class ;
+                
+                rdfs:label "nitrates"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_23367 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty chebi:has_functional_parent ;
+                                  owl:someValuesFrom obo:CHEBI_48107
+                                ] ;
+                
+                oboInOwl:hasAlternativeId "CHEBI:25544"^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:51081"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "ChEBI:C00244"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "nitratos"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_51086
+
+obo:CHEBI_51086 rdf:type owl:Class ;
+                
+                rdfs:label "chemical role"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_50906 ;
+                
+                obo:IAO_0000115 "A role played by the molecular entity or part thereof within a chemical context."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:51086"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_51143
+
+obo:CHEBI_51143 rdf:type owl:Class ;
+                
+                rdfs:label "nitrogen molecular entity"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_33302 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty chebi:BFO_0000051 ;
+                                  owl:someValuesFrom obo:CHEBI_25555
+                                ] ;
+                
+                oboInOwl:hasRelatedSynonym "."^^xsd:string ;
+                
+                oboInOwl:hasAlternativeId "CHEBI:25556"^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:51143"^^xsd:string ;
+                
+                oboInOwl:hasAlternativeId "CHEBI:7594"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "KEGG COMPOUND:C06061"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "Nitrogenous compounds"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "nitrogen compounds"^^xsd:string ,
+                                           "nitrogen molecular entities"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_52206
+
+obo:CHEBI_52206 rdf:type owl:Class ;
+                
+                rdfs:label "biochemical role"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_24432 ;
+                
+                obo:IAO_0000115 "A biological role played by the molecular entity or part thereof within a biochemical context."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:52206"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_52209
+
+obo:CHEBI_52209 rdf:type owl:Class ;
+                
+                rdfs:label "aetiopathogenetic role"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_24432 ;
+                
+                obo:IAO_0000115 "A role played by the molecular entity or part thereof which causes the development of a pathological process."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:52209"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "etiopathogenetic agent"^^xsd:string ,
+                                           "etiopathogenetic role"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_52211
+
+obo:CHEBI_52211 rdf:type owl:Class ;
+                
+                rdfs:label "physiological role"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_24432 ;
+                
+                oboInOwl:id "CHEBI:52211"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_59740
+
+obo:CHEBI_59740 rdf:type owl:Class ;
+                
+                rdfs:label "nucleophilic reagent"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_33893 ,
+                                obo:CHEBI_39144 ;
+                
+                obo:IAO_0000115 "A reagent that forms a bond to its reaction partner (the electrophile) by donating both bonding electrons."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:59740"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "nucleophile"^^xsd:string ,
+                                           "nucleophiles"^^xsd:string ,
+                                           "nucleophilic reagents"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_63038
+
+obo:CHEBI_63038 rdf:type owl:Class ;
+                
+                rdfs:label "ammonium nitrate"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_47704 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0000087 ;
+                                  owl:someValuesFrom obo:CHEBI_33287
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0000087 ;
+                                  owl:someValuesFrom obo:CHEBI_63248
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0000087 ;
+                                  owl:someValuesFrom obo:CHEBI_63490
+                                ] ;
+                
+                oboInOwl:hasRelatedSynonym "Ammonium nitricum"^^xsd:string ,
+                                           "Ammonium saltpeter"^^xsd:string ,
+                                           "Ammonium(I) nitrate (1:1)"^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:63038"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "ChemIDplus:6484-52-2"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "H4N2O3"^^xsd:string ,
+                                           "InChI=1S/NO3.H3N/c2-1(3)4;/h;1H3/q-1;/p+1"^^xsd:string ,
+                                           "InChIKey=DVARTQFDIMZBAA-UHFFFAOYSA-O"^^xsd:string ,
+                                           "Nitrate d'ammonium"^^xsd:string ,
+                                           "Nitrate of ammonia"^^xsd:string ,
+                                           "Nitrato amonico"^^xsd:string ,
+                                           "Nitric acid ammonium salt (1:1)"^^xsd:string ,
+                                           "Nitric acid, ammonium salt"^^xsd:string ,
+                                           "Norway saltpeter"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "Reaxys:13203931"^^xsd:string ;
+                
+                obo:IAO_0000115 "The ammonium salt of nitric acid."^^xsd:string ;
+                
+                oboInOwl:hasDbXref "Wikipedia:Ammonium_nitrate"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "[NH4+].[O-][N+]([O-])=O"^^xsd:string ;
+                
+                oboInOwl:hasExactSynonym "ammonium nitrate"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_63248
+
+obo:CHEBI_63248 rdf:type owl:Class ;
+                
+                rdfs:label "oxidising agent"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_51086 ;
+                
+                obo:IAO_0000115 "A substance that removes electrons from another reactant in a redox reaction."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:63248"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "oxidant"^^xsd:string ,
+                                           "oxidants"^^xsd:string ,
+                                           "oxidiser"^^xsd:string ,
+                                           "oxidisers"^^xsd:string ,
+                                           "oxidising agents"^^xsd:string ,
+                                           "oxidizer"^^xsd:string ,
+                                           "oxidizers"^^xsd:string ,
+                                           "oxidizing agent"^^xsd:string ,
+                                           "oxidizing agents"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_63490
+
+obo:CHEBI_63490 rdf:type owl:Class ;
+                
+                rdfs:label "explosive"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_51086 ;
+                
+                obo:IAO_0000115 "A substance capable of undergoing rapid and highly exothermic decomposition."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:63490"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "Wikipedia:Explosive_material"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "explosive compound"^^xsd:string ,
+                                           "explosive compounds"^^xsd:string ,
+                                           "explosive material"^^xsd:string ,
+                                           "explosives"^^xsd:string ,
+                                           "explosives chemical"^^xsd:string ,
+                                           "explosives chemicals"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_64909
+
+obo:CHEBI_64909 rdf:type owl:Class ;
+                
+                rdfs:label "poison"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_24432 ;
+                
+                obo:IAO_0000115 "Any substance that causes disturbance to organisms by chemical reaction or other activity on the molecular scale, when a sufficient quantity is absorbed by the organism."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:64909"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "Wikipedia:Poison"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "poisonous agent"^^xsd:string ,
+                                           "poisonous agents"^^xsd:string ,
+                                           "poisonous substance"^^xsd:string ,
+                                           "poisonous substances"^^xsd:string ,
+                                           "poisons"^^xsd:string ,
+                                           "toxic agent"^^xsd:string ,
+                                           "toxic agents"^^xsd:string ,
+                                           "toxic substance"^^xsd:string ,
+                                           "toxic substances"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_75763
+
+obo:CHEBI_75763 rdf:type owl:Class ;
+                
+                rdfs:label "eukaryotic metabolite"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_25212 ;
+                
+                obo:IAO_0000115 "Any  metabolite produced during a metabolic reaction in eukaryotes, the taxon that include members of the fungi, plantae and animalia kingdoms."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:75763"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "eukaryotic metabolites"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_75767
+
+obo:CHEBI_75767 rdf:type owl:Class ;
+                
+                rdfs:label "animal metabolite"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_75763 ;
+                
+                obo:IAO_0000115 "Any eukaryotic metabolite produced during a metabolic reaction in animals that include diverse creatures from sponges, insects to mammals."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:75767"^^xsd:string ;
+                
+                oboInOwl:hasAlternativeId "CHEBI:77721"^^xsd:string ,
+                                          "CHEBI:77743"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "animal metabolites"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_75768
+
+obo:CHEBI_75768 rdf:type owl:Class ;
+                
+                rdfs:label "mammalian metabolite"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_75767 ;
+                
+                obo:IAO_0000115 "Any animal metabolite produced during a metabolic reaction in mammals."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:75768"^^xsd:string ;
+                
+                oboInOwl:hasAlternativeId "CHEBI:77464"^^xsd:string ,
+                                          "CHEBI:77744"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "mammalian metabolites"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_76759
+
+obo:CHEBI_76759 rdf:type owl:Class ;
+                
+                rdfs:label "EC 3.* (hydrolase) inhibitor"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_23924 ;
+                
+                obo:IAO_0000115 "Any enzyme inhibitor that interferes with the action of a hydrolase (EC 3.*.*.*)."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:76759"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "EC 3.* (hydrolase) inhibitors"^^xsd:string ,
+                                           "EC 3.* inhibitor"^^xsd:string ,
+                                           "EC 3.* inhibitors"^^xsd:string ,
+                                           "EC 3.*.*.* inhibitor"^^xsd:string ,
+                                           "EC 3.*.*.* inhibitors"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "Wikipedia:Hydrolase"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "hydrolase (EC 3.*) inhibitor"^^xsd:string ,
+                                           "hydrolase (EC 3.*) inhibitors"^^xsd:string ,
+                                           "hydrolase inhibitor"^^xsd:string ,
+                                           "hydrolase inhibitors"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_76764
+
+obo:CHEBI_76764 rdf:type owl:Class ;
+                
+                rdfs:label "EC 3.5.* (hydrolases acting on non-peptide C-N bonds) inhibitor"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_76759 ;
+                
+                obo:IAO_0000115 "Any hydrolase inhibitor that interferes with the action of a hydrolase acting on C-N bonds, other than peptide bonds (EC 3.5.*.*)."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:76764"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "EC 3.5.* (hydrolase acting on non-peptide C-N bond) inhibitor"^^xsd:string ,
+                                           "EC 3.5.* (hydrolase acting on non-peptide C-N bond) inhibitors"^^xsd:string ,
+                                           "EC 3.5.* (hydrolases acting on C-N bonds, other than peptide bonds) inhibitor"^^xsd:string ,
+                                           "EC 3.5.* (hydrolases acting on C-N bonds, other than peptide bonds) inhibitors"^^xsd:string ,
+                                           "EC 3.5.* (hydrolases acting on non-peptide C-N bonds) inhibitors"^^xsd:string ,
+                                           "EC 3.5.* inhibitor"^^xsd:string ,
+                                           "EC 3.5.* inhibitors"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_76807
+
+obo:CHEBI_76807 rdf:type owl:Class ;
+                
+                rdfs:label "EC 3.5.1.* (non-peptide linear amide C-N hydrolase) inhibitor"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_76764 ;
+                
+                obo:IAO_0000115 "An EC 3.5.* (hydrolases acting on non-peptide C-N bonds) inhibitor that interferes with the action of any non-peptide linear amide C-N hydrolase (EC 3.5.1.*)."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:76807"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "EC 3.5.1.* (non-peptide linear amide C-N hydrolase) inhibitors"^^xsd:string ,
+                                           "EC 3.5.1.* inhibitor"^^xsd:string ,
+                                           "EC 3.5.1.* inhibitors"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "non-peptide linear amide C-N hydrolase (EC 3.5.1.*) inhibitor"^^xsd:string ,
+                                           "non-peptide linear amide C-N hydrolase (EC 3.5.1.*) inhibitors"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_77746
+
+obo:CHEBI_77746 rdf:type owl:Class ;
+                
+                rdfs:label "human metabolite"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_75768 ;
+                
+                obo:IAO_0000115 "Any mammalian metabolite  produced during a metabolic reaction in humans (Homo sapiens)."^^xsd:string ;
+                
+                oboInOwl:hasAlternativeId "CHEBI:75770"^^xsd:string ,
+                                          "CHEBI:77123"^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:77746"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "H. sapiens metabolite"^^xsd:string ,
+                                           "H. sapiens metabolites"^^xsd:string ,
+                                           "Homo sapiens metabolite"^^xsd:string ,
+                                           "Homo sapiens metabolites"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_77941
+
+obo:CHEBI_77941 rdf:type owl:Class ;
+                
+                rdfs:label "EC 3.5.1.4 (amidase) inhibitor"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_76807 ;
+                
+                obo:IAO_0000115 "An EC 3.5.1.* (non-peptide linear amide C-N hydrolase) inhibitor that interferes with the action of amidase (EC 3.5.1.4)."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:77941"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "EC 3.5.1.4 (amidase) inhibitors"^^xsd:string ,
+                                           "EC 3.5.1.4 inhibitor"^^xsd:string ,
+                                           "EC 3.5.1.4 inhibitors"^^xsd:string ,
+                                           "N-acetylaminohydrolase inhibitor"^^xsd:string ,
+                                           "N-acetylaminohydrolase inhibitors"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "Wikipedia:Amidase"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "acylamidase inhibitor"^^xsd:string ,
+                                           "acylamidase inhibitors"^^xsd:string ,
+                                           "acylamide amidohydrolase inhibitor"^^xsd:string ,
+                                           "acylamide amidohydrolase inhibitors"^^xsd:string ,
+                                           "amidase (EC 3.5.1.4) inhibitor"^^xsd:string ,
+                                           "amidase (EC 3.5.1.4) inhibitors"^^xsd:string ,
+                                           "amidase inhibitor"^^xsd:string ,
+                                           "amidase inhibitors"^^xsd:string ,
+                                           "amidohydrolase inhibitor"^^xsd:string ,
+                                           "amidohydrolase inhibitors"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "deaminase inhibitor"^^xsd:string ,
+                                           "deaminase inhibitors"^^xsd:string ,
+                                           "fatty acylamidase inhibitor"^^xsd:string ,
+                                           "fatty acylamidase inhibitors"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_78295
+
+obo:CHEBI_78295 rdf:type owl:Class ;
+                
+                rdfs:label "food component"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_52211 ;
+                
+                obo:IAO_0000115 "Any substance that is distributed in foodstuffs. It includes materials derived from plants or animals, such as vitamins or minerals, as well as environmental contaminants."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:78295"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "dietary component"^^xsd:string ,
+                                           "dietary components"^^xsd:string ,
+                                           "food components"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_78433
+
+obo:CHEBI_78433 rdf:type owl:Class ;
+                
+                rdfs:label "refrigerant"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_33232 ;
+                
+                obo:IAO_0000115 "A substance used in a thermodynamic heat pump cycle or refrigeration cycle that undergoes a phase change from a gas to a liquid and back. Refrigerants are used in air-conditioning systems and freezers or refrigerators and are assigned a \"R\" number (by ASHRAE - formerly the American Society of Heating, Refrigerating and Air Conditioning Engineers), which is determined systematically according to their molecular structure."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:78433"^^xsd:string ;
+                
+                oboInOwl:hasDbXref "Wikipedia:Refrigerant"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "refrigerants"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_79388
+
+obo:CHEBI_79388 rdf:type owl:Class ;
+                
+                rdfs:label "divalent inorganic anion"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_24834 ;
+                
+                obo:IAO_0000115 "Any inorganic anion with a valency of two."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:79388"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "divalent inorganic anions"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_79389
+
+obo:CHEBI_79389 rdf:type owl:Class ;
+                
+                rdfs:label "monovalent inorganic anion"^^xsd:string ;
+                
+                rdfs:subClassOf obo:CHEBI_24834 ;
+                
+                obo:IAO_0000115 "Any inorganic anion with a valency of one."^^xsd:string ;
+                
+                oboInOwl:id "CHEBI:79389"^^xsd:string ;
+                
+                oboInOwl:hasOBONamespace "chebi_ontology"^^xsd:string ;
+                
+                oboInOwl:hasRelatedSynonym "monovalent inorganic anions"^^xsd:string ;
+                
+                obo:IAO_0000412 obo:chebi.owl .
+
+
+
+
+###  Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net
+
